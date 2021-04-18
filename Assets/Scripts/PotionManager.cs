@@ -57,7 +57,7 @@ public class PotionManager : MonoBehaviour
         Inventory.inventory.SpeedPotionScreen.SetActive(true);
         Inventory.inventory.SpeedPotionScreenTimeGameObject.SetActive(true);
         Inventory.inventory.SpeedPotionScreenImageGameObject.SetActive(true);
-      //  Inventory.inventory.SpeedPotionValue = Inventory.inventory.SpeedPotionValue - 1;
+        Inventory.inventory.SpeedPotionValue = Inventory.inventory.SpeedPotionValue - 1;
         LoadAndSaveData.instance.SaveData();
         Inventory.inventory.SpeedPotionTimeGameObject.SetActive(true);
         Inventory.inventory.SpeedPotionUseButton.SetActive(true);
@@ -81,6 +81,7 @@ public class PotionManager : MonoBehaviour
         Inventory.inventory.HealPotionScreenTimeGameObject.SetActive(true);
         Inventory.inventory.CloseInventory();
         HeartFill.SetMaxHealth(250);
+        Statistic.Instance.regeneration += 250;
         PlayerHealth.instance.maxHealth = 250;
         PlayerHealth.instance.currentHealth = 250;
         StartCoroutine(HealPotionUsing());
@@ -143,6 +144,8 @@ public class PotionManager : MonoBehaviour
             {
                 Inventory.inventory.HealPotionImage.sprite = HealPotion4;
                 Inventory.inventory.HealPotionScreenImage.sprite = HealPotion4;
+                PlayerHealth.instance.currentHealth += 50;
+                Statistic.Instance.regeneration += 50;
 
             }
             if (i == p + p + p + p + p)
@@ -157,6 +160,8 @@ public class PotionManager : MonoBehaviour
                 Inventory.inventory.HealPotionScreenImage.sprite = EmptyPotion;
                 PlayerHealth.instance.maxHealth = 100;
                 HeartFill.SetMaxHealth(100);
+                PlayerHealth.instance.currentHealth = 100;
+                Statistic.Instance.regeneration += 100;
 
             }
 

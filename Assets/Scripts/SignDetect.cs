@@ -48,6 +48,20 @@ public class SignDetect : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Text.text = TextToDisplay;
+            StartCoroutine(FadeIn());
+            if (isDidacticiel)
+            {
+                Didacticiel.instance.DisplayDidacticielPanel(DisplayDirectonalKeys,DisplaySpaceKey, DisplayCointCountArrow);
+            }
+        }
+    }
+
     private IEnumerator FadeIn()
     {
         TextOBJ.SetActive(true);

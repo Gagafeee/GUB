@@ -43,19 +43,21 @@ public class Statistic : MonoBehaviour
         }
         if (itemType == 1)
         {
+            Inventory.inventory.SpeedPotionValue += amount;
             speedPotionCollected++;
            
         }
         if (itemType == 2)
         {
+            Inventory.inventory.HealPotionValue += amount;
             healPotionCollected++;
 
            
         }
         if (itemType == 3)
         {
-            Inventory.inventory.JumpPotionValue += 5;
-            //   jumpPotionCollected ++;
+            Inventory.inventory.JumpPotionValue += amount;
+            jumpPotionCollected ++;
 
 
         }
@@ -66,6 +68,8 @@ public class Statistic : MonoBehaviour
         timeS++;
         timerIsActive = true;
         StartCoroutine(TimerCor());
+        
+        LoadAndSaveData.instance.LoadStatistics();
     }
 
 

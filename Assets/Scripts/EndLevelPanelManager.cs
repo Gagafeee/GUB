@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Unity.Mathematics;
@@ -33,6 +34,12 @@ public class EndLevelPanelManager : MonoBehaviour
     public Text distanceTraveledValue;
     
     public Text timeValue;
+
+    public Text title;
+    
+    public Text timeSValue;
+    public Text timeMValue;
+    public Text timeHValue;
     public void Awake()
     {
         Instance = this;
@@ -41,9 +48,11 @@ public class EndLevelPanelManager : MonoBehaviour
 
     public void SetStats()
     {
-        Statistic.Instance.distanceTraveled = PlayerMovement.instance.Player.transform.position.x - 46;
+        var p = PlayerMovement.instance.Player.transform.position.x - -46;
+        Statistic.Instance.distanceTraveled = Mathf.Abs(p);
 
-
+        title.text = "Bravo, Vous avez Terminez le niveau " + SceneManager.GetActiveScene().buildIndex;
+        
         deadValue.text = Statistic.Instance.dead.ToString();
         damageValue.text = Statistic.Instance.damage.ToString();
         regenerationValue.text = Statistic.Instance.regeneration.ToString();
@@ -59,14 +68,48 @@ public class EndLevelPanelManager : MonoBehaviour
         distanceTraveledValue.text = Statistic.Instance.distanceTraveled.ToString();
         collectedCoinsValue.text = Statistic.Instance.collectedCoins.ToString();
 
-        timeValue.text = "Time : " + (00 + Statistic.Instance.timeH) + ":" + (00 + Statistic.Instance.timeM) + ":" +
-                         (00 + Statistic.Instance.timeS);
+
+
+        if (Statistic.Instance.timeH >= 10)
+        {
+            timeHValue.text = Statistic.Instance.timeH.ToString();
+        }
+
+        if (Statistic.Instance.timeH < 10)
+        {
+            timeHValue.text = "0" + Statistic.Instance.timeH;
+        }
+
+
+        if (Statistic.Instance.timeM >= 10)
+        {
+            timeMValue.text = Statistic.Instance.timeM.ToString();
+        }
+
+        if (Statistic.Instance.timeM < 10)
+        {
+            timeMValue.text = "0" + Statistic.Instance.timeM;
+        }
+
+        if (Statistic.Instance.timeS >= 10)
+        {
+            timeSValue.text = Statistic.Instance.timeS.ToString();
+        }
+
+        if (Statistic.Instance.timeS < 10)
+        {
+            timeSValue.text = "0" + Statistic.Instance.timeS;
+        }
+
+        
+        
+
 
     }
 
     public void DisplayPanel()
     {
-        //SetStats();
+        SetStats();
         StartCoroutine(DisplayPanelCor());
     }
     

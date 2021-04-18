@@ -58,6 +58,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMainMenu()
     {
 
+        LoadAndSaveData.instance.SaveStatistics();
         Resume();
         SceneManager.LoadSceneAsync("MainMenu");
 

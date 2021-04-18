@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public static Inventory inventory;
+    public Statistic statistic;
     public int ___________________________________________;
     public GameObject Panel;
     public Animator animator;
@@ -290,19 +291,19 @@ public class Inventory : MonoBehaviour
     {
         if (itemType == 0)
         {
-           Statistic.Instance.AddItems(0,amount);
+           statistic.AddItems(0,amount);
         }
         if (itemType == 1)
         {
-            Statistic.Instance.AddItems(1,amount);
+            statistic.AddItems(1,amount);
         }
         if (itemType == 2)
         {
-            Statistic.Instance.AddItems(2,amount);
+            statistic.AddItems(2,amount);
         }
         if (itemType == 3)
         {
-            Statistic.Instance.AddItems(3,amount);
+            statistic.AddItems(3,amount);
         }
     }
 

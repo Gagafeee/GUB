@@ -11,6 +11,8 @@ public class CointInventory : MonoBehaviour
     public GameObject CointAddObject;
     public static CointInventory instance;
     public int u;
+    
+    public Statistic statistic;
 
     public void Awake()
     {
@@ -30,7 +32,7 @@ public class CointInventory : MonoBehaviour
     public void AddCoins(int count)
     {
 
-        Statistic.Instance.collectedCoins += count;
+        statistic.collectedCoins += count;
         StartCoroutine(AddCointAnnimations(count));
 
 

@@ -473,26 +473,41 @@ public class CharacterManager : MonoBehaviour
         
     }
 
-    public void DeletePlayer(int CharacterId)
+    private void DeletePlayer(int characterId)
     {
-        File.Delete(Application.dataPath + "/Data/players/Player" + CharacterId + ".txt");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "Coints");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "SpeedPotion");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "BigSpeedPotion");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "HealPotion");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "BigHealPotion");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "Health");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "JumpPotion");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "StartPosX");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "StartPosY");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "StartPosZ");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "lastlevelunloked");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "RespawnPointX");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "RespawnPointY");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "RespawnPointZ");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "CheckpointIndex");
-        PlayerPrefs.DeleteKey("Player" + CharacterId + "Didacticiel");
-        
+        File.Delete(Application.dataPath + "/Data/players/Player" + characterId + ".txt");
+        PlayerPrefs.DeleteKey("Player" + characterId + "Coints");
+        PlayerPrefs.DeleteKey("Player" + characterId + "SpeedPotion");
+        PlayerPrefs.DeleteKey("Player" + characterId + "BigSpeedPotion");
+        PlayerPrefs.DeleteKey("Player" + characterId + "HealPotion");
+        PlayerPrefs.DeleteKey("Player" + characterId + "BigHealPotion");
+        PlayerPrefs.DeleteKey("Player" + characterId + "Health");
+        PlayerPrefs.DeleteKey("Player" + characterId + "JumpPotion");
+        PlayerPrefs.DeleteKey("Player" + characterId + "StartPosX");
+        PlayerPrefs.DeleteKey("Player" + characterId + "StartPosY");
+        PlayerPrefs.DeleteKey("Player" + characterId + "StartPosZ");
+        PlayerPrefs.DeleteKey("Player" + characterId + "lastlevelunloked");
+        PlayerPrefs.DeleteKey("Player" + characterId + "RespawnPointX");
+        PlayerPrefs.DeleteKey("Player" + characterId + "RespawnPointY");
+        PlayerPrefs.DeleteKey("Player" + characterId + "RespawnPointZ");
+        PlayerPrefs.DeleteKey("Player" + characterId + "CheckpointIndex");
+        PlayerPrefs.DeleteKey("Player" + characterId + "Didacticiel");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:dead");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:damage");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:regeneration");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:speedPotionUse");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:healPotionUse");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:jumpPotionUse");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:speedPotionCollected");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:healPotionCollected");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:jumpPotionCollected");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:jumps");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:distanceTraveled");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:collectedCoins");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:timeS");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:timeM");
+        PlayerPrefs.DeleteKey("Player" + characterId + "STAT:timeH");
+
         LoadCharacter();
         AudioManager.PlayClipAt(sound, transform.position);
     }
@@ -577,6 +592,8 @@ public class CharacterManager : MonoBehaviour
       }
       
       SceneManager.LoadSceneAsync("Level" + Levelmanager.instance.lastLevelUnloked);
+      
+ 
        
 
         

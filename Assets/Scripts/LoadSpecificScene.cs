@@ -44,8 +44,7 @@ public class LoadSpecificScene : MonoBehaviour
             StartCoroutine(loadCreditScene());
 
         }
-
-        ErrorManager.instance.Error("test", "test");
+        
 
     }
 

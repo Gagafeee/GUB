@@ -102,6 +102,7 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         Statistic.Instance.dead++;
+        LoadAndSaveData.instance.SaveStatistics();
         LoadAndSaveData.instance.SaveData();
         isDie = true;
         PlayerMovement.instance.animator.SetTrigger("Die");
@@ -121,6 +122,7 @@ public class PlayerHealth : MonoBehaviour
         this.transform.position.Set(CurrentSceneManager.instance.RespawnPoint.x, CurrentSceneManager.instance.RespawnPoint.y, CurrentSceneManager.instance.RespawnPoint.z);
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
+        LoadAndSaveData.instance.LoadStatistics();
         isDie = false;
     }
 
