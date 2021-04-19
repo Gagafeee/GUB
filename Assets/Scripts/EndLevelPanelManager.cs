@@ -118,12 +118,15 @@ public class EndLevelPanelManager : MonoBehaviour
         panel.SetActive(true);
         panelAnimator.SetBool("isVisible", true);
         yield return new WaitForSeconds(1.30f);
-        Time.timeScale = 0;
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
+        PlayerMovement.instance.rb.velocity = Vector3.zero;
+        PlayerMovement.instance.playerCollider.enabled = false;
     }
 
     public void NextLevel()
     {
-        Time.timeScale = 1;
+        PlayerMovement.instance.playerCollider.enabled = true;
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
         StartCoroutine(NextLevelCor());
     }
 

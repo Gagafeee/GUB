@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa2e57d-5acd-4fd9-8a57-19dc3aaec0c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/ShopFadeIN.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/ShopFadeIN.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" afterDir="false" />
