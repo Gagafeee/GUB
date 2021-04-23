@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,7 @@ public class CointInventory : MonoBehaviour
         coinsCountText.text = coinsCount.ToString();
         Inventory.inventory.CointQTText.text = coinsCount.ToString();
         u = coinsCount;
+        
 
     }
 

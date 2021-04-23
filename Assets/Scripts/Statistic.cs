@@ -44,20 +44,20 @@ public class Statistic : MonoBehaviour
         if (itemType == 1)
         {
             Inventory.inventory.SpeedPotionValue += amount;
-            speedPotionCollected++;
+            speedPotionCollected += amount;
            
         }
         if (itemType == 2)
         {
             Inventory.inventory.HealPotionValue += amount;
-            healPotionCollected++;
+            healPotionCollected += amount;
 
            
         }
         if (itemType == 3)
         {
             Inventory.inventory.JumpPotionValue += amount;
-            jumpPotionCollected ++;
+            jumpPotionCollected  += amount;
 
 
         }

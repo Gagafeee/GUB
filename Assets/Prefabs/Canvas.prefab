@@ -246,7 +246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 18401650}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967174759}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: Trade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &20584327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2293,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &967174760
 Transform:
@@ -2312,17 +2324,29 @@ MonoBehaviour:
   panelAnimator: {fileID: 855028832}
   shopPanel: {fileID: 2214645091818243632}
   cointValue: {fileID: 310070184122318642}
-  cointImg: {fileID: 2242513399924799241}
   speedPotionValue: {fileID: 4030731161211255913}
-  speedPotionImg: {fileID: 2198598312202677963}
   healPotionValue: {fileID: 216055994121971231}
-  healPotionImg: {fileID: 7868542976696934570}
   jumpPotionValue: {fileID: 8450510178336955015}
-  jumpPotionImg: {fileID: 6601207425347502474}
   t1Text1: {fileID: 1843985550730482613}
   t1Text2: {fileID: 3434614391807019395}
+  t1Value1: 250
+  t1Value2: 2
   t1Button: {fileID: 39439893514899089}
-  t1Type: 1
+  t2Text1: {fileID: 870274200}
+  t2Text2: {fileID: 1557101392}
+  t2Value1: 300
+  t2Value2: 2
+  t2Button: {fileID: 1831174507}
+  t3Text1: {fileID: 522063115}
+  t3Text2: {fileID: 1913539352}
+  t3Value1: 150
+  t3Value2: 1
+  t3Button: {fileID: 18401649}
+  t4Text1: {fileID: 732645738}
+  t4Text2: {fileID: 1767368495}
+  t4Value1: 1000
+  t4Value2: 1
+  t4Button: {fileID: 1058367883}
 --- !u!1 &967711675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,7 +2700,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058367884}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967174759}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: Trade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1063971934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,7 +4178,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1831174508}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967174759}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: Trade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1867862670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6742,7 +6790,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7915,7 +7963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 305.75995}
+  m_AnchoredPosition: {x: 0, y: 305.76004}
   m_SizeDelta: {x: 0, y: 816.6}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3067766576475040701
@@ -15251,8 +15299,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3067766576632810911}
   m_HandleRect: {fileID: 3067766576632810910}
   m_Direction: 2
-  m_Value: 0.0000002994268
-  m_Size: 0.6255338
+  m_Value: -0.00000039923583
+  m_Size: 0.6255599
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17668,7 +17716,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1642663286386167990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967174759}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: Trade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3395969769143510001
 GameObject:
   m_ObjectHideFlags: 0
@@ -17705,7 +17765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0018396158, y: 0.000030517578}
+  m_AnchoredPosition: {x: -0.000008957537, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: -0.00018310547}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3437788270711584435
@@ -18329,9 +18389,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6995639135151522825
 CanvasRenderer:

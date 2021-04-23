@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
     public int _________________________________________;
     public Text ItemQTText;
     public Image ItemImage;
-    private int ItemValue;
+    public int ItemValue;
     public int ________________________________________;
     public Text SpeedPotionQTText;
     public Image SpeedPotionImage;
@@ -308,5 +308,8 @@ public class Inventory : MonoBehaviour
     }
 
 
-
+    public void AddItems()
+    {
+        throw new System.NotImplementedException();
+    }
 }
