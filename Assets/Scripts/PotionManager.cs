@@ -98,7 +98,7 @@ public class PotionManager : MonoBehaviour
         Inventory.inventory.JumpPotionScreenImageGameObject.SetActive(true);
         Inventory.inventory.JumpPotionScreenTimeGameObject.SetActive(true);
         Inventory.inventory.CloseInventory();
-        PlayerMovement.instance.jumpForce = 450f;
+        PlayerMovement.instance.jumpForce = 400f;
         StartCoroutine(JumpPotionUsing());
     }
 

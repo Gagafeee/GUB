@@ -121,12 +121,14 @@ public class EndLevelPanelManager : MonoBehaviour
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.rb.velocity = Vector3.zero;
         PlayerMovement.instance.playerCollider.enabled = false;
+        PlayerMovement.instance.moveSpeed = 0;
     }
 
     public void NextLevel()
     {
         PlayerMovement.instance.playerCollider.enabled = true;
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
+        PlayerMovement.instance.moveSpeed = 150;
         StartCoroutine(NextLevelCor());
     }
 

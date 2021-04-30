@@ -209,8 +209,8 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Et voil\xE0 maintenant si tu tombe tu r\xE9appara\xEEtra ici g\xE9niale
-        non ?. "
+      value: "Et voil\xE0 maintenant si tu tombe ou que tu quitte tu r\xE9appara\xEEtra
+        ici g\xE9niale non ?"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -335,6 +335,16 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: DisplaySpaceKey
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displaySpaceKey
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayKeysPanel
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -615,7 +625,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
+      propertyPath: displaySpaceKey
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayKeysPanel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
       propertyPath: DisplayDirectonalKeys
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayDirectonalKeys
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3461,12 +3486,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
+      propertyPath: displayKeysPanel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
       propertyPath: DisplayDirectonalKeys
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: DisplayCointCountArrow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayCointCountArrow
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6250,12 +6285,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
+      propertyPath: displayKeysPanel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
       propertyPath: DisplayDirectonalKeys
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: DisplayDirectonalkeys
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayDirectonalKeys
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6445,11 +6490,6 @@ PrefabInstance:
       propertyPath: Cameranimator
       value: 
       objectReference: {fileID: 878298359}
-    - target: {fileID: 3067766576457649997, guid: 088ff2fd8f029414d989820d3019f72c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 308.21365
-      objectReference: {fileID: 0}
     - target: {fileID: 3067766576592536586, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6570,6 +6610,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3067766576632810910, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3067766577326600862, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -6585,6 +6630,11 @@ PrefabInstance:
       propertyPath: Console
       value: 
       objectReference: {fileID: 1888522850}
+    - target: {fileID: 7397327194018935687, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -51.52588
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 088ff2fd8f029414d989820d3019f72c, type: 3}
 --- !u!1001 &3845226426301504764
@@ -6832,6 +6882,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
+      propertyPath: displayKeysPanel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
       propertyPath: DisplayDirectonalKeys
       value: 1
       objectReference: {fileID: 0}
@@ -6839,6 +6894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DisplayDirectonalkeys
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: displayDirectonalKeys
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f9135837795f994ba171446c9643c27, type: 3}

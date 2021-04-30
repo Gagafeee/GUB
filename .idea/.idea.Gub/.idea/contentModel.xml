@@ -13,6 +13,7 @@
             <e p="Player1.txt" t="Include" />
             <e p="Player2.txt" t="Include" />
             <e p="Player3.txt" t="Include" />
+            <e p="Player4.txt" t="Include" />
           </e>
         </e>
         <e p="gems" t="Include">

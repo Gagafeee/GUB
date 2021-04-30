@@ -17,39 +17,42 @@ public class Didacticiel : MonoBehaviour
 
     public void DisplayDidacticielPanel(bool DisplayDirectionalKeys, bool DisplaySpaceKey, bool DisplayCointCountArrow)
     {
-        //DisplayDirectionalKeys
-        if (DisplayDirectionalKeys)
-        {
-            DirectionalKeyAnimator.SetBool("DisplayDirectionalKeysFlashing", true);
-        }
-
-        if (DisplayDirectionalKeys == false)
-        {
-            DirectionalKeyAnimator.SetBool("DisplayDirectionalKeysFlashing", false);
-        }
         
-        //DisplaySpaceKey
-        if (DisplaySpaceKey)
+
+
+        switch (DisplayDirectionalKeys)
         {
-            DisplaySpaceKeyAnimator.SetBool("DisplaySpaceKeyFlashing", true);
+            //DisplayDirectionalKeys
+            case true:
+                DirectionalKeyAnimator.SetBool("DisplayDirectionalKeysFlashing", true);
+                Animator.SetBool("isVisible", true);
+                break;
+            case false:
+                DirectionalKeyAnimator.SetBool("DisplayDirectionalKeysFlashing", false);
+                break;
         }
 
-        if (DisplaySpaceKey == false)
+        switch (DisplaySpaceKey)
         {
-            DisplaySpaceKeyAnimator.SetBool("DisplaySpaceKeyFlashing", false);
+            //DisplaySpaceKey
+            case true:
+                DisplaySpaceKeyAnimator.SetBool("DisplaySpaceKeyFlashing", true);
+                Animator.SetBool("isVisible", true);
+                break;
+            case false:
+                DisplaySpaceKeyAnimator.SetBool("DisplaySpaceKeyFlashing", false);
+                break;
         }
 
-        if (DisplayCointCountArrow)
+        switch (DisplayCointCountArrow)
         {
-            DisplayCointCountArrowAnimator.SetBool("isVisible", true);
+            case true:
+                DisplayCointCountArrowAnimator.SetBool("isVisible", true);
+                break;
+            case false:
+                DisplayCointCountArrowAnimator.SetBool("isVisible", false);
+                break;
         }
-        if (DisplayCointCountArrow == false)
-        {
-            DisplayCointCountArrowAnimator.SetBool("isVisible", false);
-        }
-            
-
-        Animator.SetBool("isVisible", true);
     }
 
     public void RemoveDisplayDidacticielPanel()

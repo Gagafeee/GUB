@@ -13,9 +13,9 @@ public class SignDetect : MonoBehaviour
 
 
     public bool isDidacticiel;
-    public bool DisplayDirectonalKeys;
-    public bool DisplaySpaceKey;
-    public bool DisplayCointCountArrow;
+    public bool displayDirectonalKeys;
+    public bool displaySpaceKey;
+    public bool displayCointCountArrow;
     
     public void Start()
     {
@@ -30,7 +30,7 @@ public class SignDetect : MonoBehaviour
             StartCoroutine(FadeIn());
             if (isDidacticiel)
             {
-                Didacticiel.instance.DisplayDidacticielPanel(DisplayDirectonalKeys,DisplaySpaceKey, DisplayCointCountArrow);
+                Didacticiel.instance.DisplayDidacticielPanel(displayDirectonalKeys, displaySpaceKey, displayCointCountArrow);
             }
         }
     }
@@ -57,7 +57,7 @@ public class SignDetect : MonoBehaviour
             StartCoroutine(FadeIn());
             if (isDidacticiel)
             {
-                Didacticiel.instance.DisplayDidacticielPanel(DisplayDirectonalKeys,DisplaySpaceKey, DisplayCointCountArrow);
+                Didacticiel.instance.DisplayDidacticielPanel(displayDirectonalKeys, displaySpaceKey, displayCointCountArrow);
             }
         }
     }

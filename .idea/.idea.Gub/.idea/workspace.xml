@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa2e57d-5acd-4fd9-8a57-19dc3aaec0c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player2.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player3.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Banner.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Banner.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/EarlyAccessBannerFadeIN.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/EarlyAccessBannerFadeIN.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/players/Player4.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/early access banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/early access banner.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Banner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Banner.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/ShopPanel.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/ShopPanel.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/players/Player1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CointInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CointInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Statistic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Statistic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Didacticiel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Didacticiel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndLevelPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndLevelPanelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SignDetect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SignDetect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +37,23 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/github/GUB/Assets/ShopManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/SignDetect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LoadAndSaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelPanelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/ShopManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Statistic.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CointInventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Didacticiel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SignDetect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelPanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKzM4e0JArUcQv0OGgSBpUHguy" />
@@ -112,7 +119,8 @@
       <workItem from="1618816889995" duration="5312000" />
       <workItem from="1618915043150" duration="4251000" />
       <workItem from="1619076735265" duration="1255000" />
-      <workItem from="1619179755681" duration="6567000" />
+      <workItem from="1619179755681" duration="7440000" />
+      <workItem from="1619265335925" duration="5060000" />
     </task>
     <servers />
   </component>

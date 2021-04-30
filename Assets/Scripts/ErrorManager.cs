@@ -23,6 +23,7 @@ public class ErrorManager : MonoBehaviour
     }
     void Start()
     {
+        
         Console = GameObject.FindGameObjectWithTag("Console");
         ConsoleAnimator = GameObject.FindGameObjectWithTag("Console").GetComponent<Animator>();
         
@@ -92,6 +93,5 @@ public class ErrorManager : MonoBehaviour
         MyNotifications.CallNotification("Error : " + reason + "/" + statue, 5);
         Debug.LogError("Une erreur est survenue Error : " + reason + "  /  " + statue + "  /  " +
                        "Il est conseillé de relancer votre jeu si le problème perciste contactez un développeur ");
-        Process.Start( @"C:\Windows\System32\Notepad.exe");
     }
 }
