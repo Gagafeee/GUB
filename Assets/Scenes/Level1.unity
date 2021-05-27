@@ -6480,6 +6480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 967174759, guid: 088ff2fd8f029414d989820d3019f72c, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 19f37f96a2d4ea44d954dbe3ac6ff927, type: 3}
     - target: {fileID: 3067766576376393355, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: Camera
@@ -6630,6 +6634,21 @@ PrefabInstance:
       propertyPath: Console
       value: 
       objectReference: {fileID: 1888522850}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7397327194018935687, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: m_AnchoredPosition.x

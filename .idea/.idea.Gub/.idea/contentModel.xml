@@ -11,9 +11,6 @@
             <e p="null.txt" t="Include" />
             <e p="Player0.txt" t="Include" />
             <e p="Player1.txt" t="Include" />
-            <e p="Player2.txt" t="Include" />
-            <e p="Player3.txt" t="Include" />
-            <e p="Player4.txt" t="Include" />
           </e>
         </e>
         <e p="gems" t="Include">
@@ -166,6 +163,7 @@
           <e p="Portal.cs" t="Include" />
           <e p="PotionManager.cs" t="Include" />
           <e p="SettingsMenu.cs" t="Include" />
+          <e p="ShopManager.cs" t="Include" />
           <e p="SignDetect.cs" t="Include" />
           <e p="SkipVideo.cs" t="Include" />
           <e p="Statistic.cs" t="Include" />
@@ -173,7 +171,6 @@
           <e p="TravelStart.cs" t="Include" />
           <e p="WeakSpot.cs" t="Include" />
         </e>
-        <e p="ShopManager.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">

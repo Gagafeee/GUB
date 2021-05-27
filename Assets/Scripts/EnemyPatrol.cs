@@ -19,7 +19,7 @@ public class EnemyPatrol : MonoBehaviour
     void Update()
     {
         Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+        transform.Translate(dir.normalized * (speed * Time.deltaTime), Space.World);
 
         // Si l'ennemi est quasiment arrivé à sa destination
         if (Vector3.Distance(transform.position, target.position) < 0.3f)

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
 
 public class ShopManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class ShopManager : MonoBehaviour
 
     public Animator panelAnimator;
     public GameObject shopPanel;
+    public AudioClip sound;
 
 
     public Text cointValue;
@@ -69,6 +72,7 @@ public class ShopManager : MonoBehaviour
                 {
                     Inventory.inventory.SpeedPotionValue += t1Value2;
                     CointInventory.instance.coinsCount -= t1Value1;
+                    AudioManager.instance.PlayClipAt(sound, transform.position);
                     SetInventory();
                     SetTrades();
                 }
@@ -85,8 +89,10 @@ public class ShopManager : MonoBehaviour
                 {
                     Inventory.inventory.HealPotionValue += t2Value2;
                     CointInventory.instance.coinsCount -= t2Value1;
+                    AudioManager.instance.PlayClipAt(sound, transform.position);
                     SetInventory();
                     SetTrades();
+
                 }
                 else
                 {
@@ -101,8 +107,11 @@ public class ShopManager : MonoBehaviour
                 {
                     Inventory.inventory.JumpPotionValue += t3Value2;
                     CointInventory.instance.coinsCount -= t3Value1;
+                    AudioManager.instance.PlayClipAt(sound, transform.position);
                     SetInventory();
                     SetTrades();
+                    
+
                 }
                 else
                 {
@@ -117,8 +126,11 @@ public class ShopManager : MonoBehaviour
                 {
                     Inventory.inventory.ItemValue += t4Value2;
                     CointInventory.instance.coinsCount -= t4Value1;
+                    AudioManager.instance.PlayClipAt(sound, transform.position);
                     SetInventory();
                     SetTrades();
+                    
+
                 }
                 else
                 {
