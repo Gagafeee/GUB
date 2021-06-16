@@ -38,7 +38,8 @@ public class ErrorManager : MonoBehaviour
         if (!File.Exists(Application.dataPath + "/Data/players/Player0.txt"))
         {
             File.WriteAllText(Application.dataPath + "/Data/players/Player0.txt", "Partie0");
-            ErrorManager.instance.Error("Application.Data.Error : Missing Player[0]", "Solved");
+            //ErrorManager.instance.Error("Application.Data.Error : Missing Player[0]", "Solved");
+            CharacterManager.instance.play0();
         }
 
 

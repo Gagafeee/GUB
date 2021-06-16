@@ -12,7 +12,7 @@ public class Levelmanager : MonoBehaviour
     //Actual Level Id
     public int actualLevel = 1;
     
-    public int levelIndex = 3;
+    public int levelIndex;
 
 
     public void Awake()
@@ -24,7 +24,7 @@ public class Levelmanager : MonoBehaviour
     public void Start()
     {
         
-
+        
         
         actualLevel = lastLevelUnloked;
         if (actualLevel < 0)

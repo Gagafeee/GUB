@@ -10,7 +10,6 @@
           <e p="players" t="Include">
             <e p="null.txt" t="Include" />
             <e p="Player0.txt" t="Include" />
-            <e p="Player1.txt" t="Include" />
           </e>
         </e>
         <e p="gems" t="Include">

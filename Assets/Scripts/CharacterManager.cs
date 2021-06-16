@@ -426,8 +426,10 @@ public class CharacterManager : MonoBehaviour
 
     public void DeletePlayer0()
     {
+        MyNotifications.CallNotification("Partie Supprimée",2);
         DeletePlayer(0);
         Character0creator();
+        
 
     }
     
@@ -467,10 +469,10 @@ public class CharacterManager : MonoBehaviour
     {
         DeletePlayer(8);
     }
+
     public void DeletePlayer9()
     {
         DeletePlayer(9);
-        
     }
 
     private void DeletePlayer(int characterId)
