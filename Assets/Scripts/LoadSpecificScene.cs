@@ -54,15 +54,15 @@ public class LoadSpecificScene : MonoBehaviour
         /*set graphique + sound*/
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadSceneAsync("MainMenu");
+        SceneManager.LoadScene("MainMenu");
         
     }
     
     
     public IEnumerator loadNextGameScene(bool displayFadeOut)
     {
-        //set graphic + sound
-        AudioManager.instance.PlayClipAt(sound, transform.position);
+        //set graphic
+        
         if (displayFadeOut)
         {
             yield return new WaitForSeconds(0.7f);
@@ -85,11 +85,11 @@ public class LoadSpecificScene : MonoBehaviour
 
     public IEnumerator loadCreditScene()
     {
-        AudioManager.instance.PlayClipAt(sound, transform.position);
-        yield return new WaitForSeconds(0.7f);
+
+
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
 
-        SceneManager.LoadSceneAsync("Credits");
+        SceneManager.LoadScene("Credits");
     }
 }

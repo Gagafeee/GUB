@@ -209,8 +209,8 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Et voil\xE0 maintenant si tu tombe ou que tu quitte tu r\xE9appara\xEEtra
-        ici g\xE9niale non ?"
+      value: "Et voil\xE0 maintenant si tu tombes, ou que tu quittes, tu r\xE9appara\xEEtras
+        ici (g\xE9nial non)"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: Et vous pouvez aussi sauter *wow*
+      value: Et vous pouvez aussi sauter *Wow*
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -407,6 +407,7 @@ Transform:
   - {fileID: 135984682}
   - {fileID: 2020697737}
   - {fileID: 1879026567}
+  - {fileID: 1263932771}
   m_Father: {fileID: 1601344783}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -495,7 +496,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: Maintenant essayez d'attraper la piece la bas
+      value: "Maintenant essayez d'attraper la piece l\xE0 bas"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -714,8 +715,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "wow c\u2019est une potion de saut \xE0 am\xE9liorer: tu saute plus
-        haut. "
+      value: "C\u2019est une potion de saut am\xE9lior\xE9 : tu sautes plus haut"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -1070,7 +1070,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: Tiens voila un coffre ouvre le pour voir.
+      value: "Tiens voil\xE0 un coffre: ouvre le pour voir"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -3233,7 +3233,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Parfais regarde tu la r\xE9colter"
+      value: "Parfais, regarde tu l'a r\xE9colt\xE9e"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -3349,6 +3349,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1263932771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+    type: 3}
+  m_PrefabInstance: {fileID: 1934011201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1338156484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,8 +3794,8 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Bon maintenant appui sur E, c\u2019est ton inventaire il permet de
-        stocker des items ou .des potions "
+      value: "Bon maintenant appuis sur [E], C\u2019est ton inventaire, il permet
+        de stocker des items ou des potions "
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -4390,7 +4396,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Maintenant regarde le drapeau, c\u2019est un checkpoint: passe dessus"
+      value: "Maintenant regarde ce drapeau, c\u2019est un checkpoint: Passe dessus"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -4955,6 +4961,115 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 3067766577907129260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1934011201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 371354032}
+    m_Modifications:
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.619
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 246.07518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829985, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829989, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: m_Name
+      value: Sign (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: Text
+      value: 
+      objectReference: {fileID: 1675723405}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: TextOBJ
+      value: 
+      objectReference: {fileID: 412741522}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 412741524}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: TextToDisplay
+      value: Maintenant passe dans le portail et commence l'aventure :)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: isDidacticiel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: DisplaySpaceKey
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: DisplayDirectonalKeys
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
+        type: 3}
+      propertyPath: DisplayCointCountArrow
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f9135837795f994ba171446c9643c27, type: 3}
 --- !u!1001 &1941312916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5040,7 +5155,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Ouvre ton inventaire et utilise-l\xE0. "
+      value: "Ouvre ton inventaire et utilise-l\xE0 (elle est tout en bas)"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -5155,7 +5270,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: " Wow tu a r\xE9cup\xE9rer une potion."
+      value: "Tu as r\xE9cup\xE9r\xE9 une potion"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -6030,8 +6145,8 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: Vous pouvez aller a gauche ou a droite mais le jeu se lit de gauche
-        vers la droite
+      value: "Vous pouvez aller \xE0 gauche ou \xE0 droite (mais c'est mieux \xE0
+        droite)"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
@@ -6235,6 +6350,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 965308294950306081, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158171211904945499, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067766576335224955, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.30005
+      objectReference: {fileID: 0}
     - target: {fileID: 3067766576376393355, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: Camera
@@ -6245,6 +6375,11 @@ PrefabInstance:
       propertyPath: Cameranimator
       value: 
       objectReference: {fileID: 878298359}
+    - target: {fileID: 3067766576540980287, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3067766576592536586, guid: 088ff2fd8f029414d989820d3019f72c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6385,6 +6520,21 @@ PrefabInstance:
       propertyPath: Console
       value: 
       objectReference: {fileID: 1888522850}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067766578220335430, guid: 088ff2fd8f029414d989820d3019f72c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 088ff2fd8f029414d989820d3019f72c, type: 3}
 --- !u!1001 &3845226426301504764
@@ -6622,7 +6772,7 @@ PrefabInstance:
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,
         type: 3}
       propertyPath: TextToDisplay
-      value: "Bonjour Bienvenue sur GUB, appuiyez sur fleche de droite pour vous
+      value: "Bonjour Bienvenue sur GUB, appuyez sur [fleche de droite] pour vous
         d\xE9placer !"
       objectReference: {fileID: 0}
     - target: {fileID: 8158763877352829990, guid: 4f9135837795f994ba171446c9643c27,

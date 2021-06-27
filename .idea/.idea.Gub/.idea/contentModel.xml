@@ -4,6 +4,7 @@
     <e p="C:\Users\gabri\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\gabri\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Gub.1117384942.00" t="ExcludeRecursive" />
     <e p="E:\github\GUB" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Data" t="Include">
@@ -238,6 +239,41 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Trello Bug Tracker - Pro" t="Include">
+          <e p="Changelog.txt" t="Include" />
+          <e p="DrawingToolAssets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Drawing.cs" t="Include" />
+              <e p="GUIControls.cs" t="Include" />
+              <e p="HSBColor.cs" t="Include" />
+              <e p="Mathfx.cs" t="Include" />
+              <e p="Painter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Example" t="Include">
+            <e p="Editor" t="Include">
+              <e p="UsageExampleEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="DropdownFix.cs" t="Include" />
+              <e p="rotate.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
+              <e p="UsageExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Trello" t="Include">
+            <e p="Trello.cs" t="Include" />
+            <e p="TrelloCard.cs" t="Include" />
+            <e p="TrelloException.cs" t="Include" />
+            <e p="TrelloList.cs" t="Include" />
+            <e p="Util" t="Include">
+              <e p="CustomCoroutine.cs" t="Include" />
+              <e p="MiniJson.cs" t="Include" />
+              <e p="ScreenshotTool.cs" t="Include" />
+              <e p="Singleton.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

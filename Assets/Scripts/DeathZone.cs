@@ -36,5 +36,6 @@ public class DeathZone : MonoBehaviour
             playerHealth.TakeDamage(damageOnCollision);
             PlayerMovement.instance.enabled = true;
         }
+        fadeSystem.SetTrigger("OUT");
     }
 }

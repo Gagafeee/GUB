@@ -2,70 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa2e57d-5acd-4fd9-8a57-19dc3aaec0c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PauseMenu.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PauseMenu.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PlayButtoningame.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PlayButtoningame.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButton 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButton 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButton.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButton.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButtonIntroingame.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingButtonIntroingame.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingsButtoningame.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/SettingsButtoningame.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/pausemenuIN.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/pausemenuIN.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/pausemenuOUT.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Menu/pausemenuOUT.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Canvas.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Canvas.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Cloud_1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Cloud_1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Player.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/Player.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/canvas.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/canvas.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/cloud.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/cloud.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/playerstart.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/credits/playerstart.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Changelog.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Documentation.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Prefabs/Painter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Prefabs/Painter.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Drawing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Drawing.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/GUIControls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/GUIControls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/HSBColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/HSBColor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Mathfx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Mathfx.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Painter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/Scripts/Painter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_grey.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_on.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_on_purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_on_purple.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/box_transparent.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/brush 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/brush 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/bw_slider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/bw_slider.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/bw_slider.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/bw_slider.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_picker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_picker.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_picker.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_picker.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_small.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/colorcircle_small.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/eraser 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/eraser 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/garbageBin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/garbageBin.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/line.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/skin.guiskin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/skin.guiskin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/tools.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/DrawingToolAssets/gui/tools.ai.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Editor/UsageExampleEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Editor/UsageExampleEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/CamIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/CamIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/checkmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/checkmark.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/close_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/close_button.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/images.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Images/loading.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/ExampleUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/ExampleUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/Trello Tool.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/Trello Tool.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/TrelloBugUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Prefabs/TrelloBugUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scenes/ExampleUsage.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scenes/ExampleUsage.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/DropdownFix.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/DropdownFix.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/rotate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/rotate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Trello.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Trello.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloCard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloCard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloException.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/TrelloList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/CustomCoroutine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/CustomCoroutine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/MiniJson.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/MiniJson.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/ScreenshotTool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/ScreenshotTool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Util/Singleton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu/PlayerMenu.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PlayerMenu.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Content.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/credits/Content.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Grid.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Grid.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Scroll.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Scroll.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Text.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Text.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/TilemapScroll.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/TilemapScroll.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/text.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/credits/text.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player1.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/FadeIN.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/EndLevelPanel/FadeIN.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/FadeSystem/FadeIn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FadeSystem/FadeIn.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/FadeSystem/FadeSystem.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FadeSystem/FadeSystem.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menu/Reprendre 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/chest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levelmanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levelmanager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -80,13 +144,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/66/0afe47f5/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/41/f67ef837/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Editor/UsageExampleEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/CD60AA1B-A617-4E20-A639-34D092082DC5/74/73de9715/02000064pdb.il" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/LoadAndSaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/ShopManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Statistic.cs" />
@@ -104,6 +168,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/rotate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Portal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Trello.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKzM4e0JArUcQv0OGgSBpUHguy" />
@@ -187,6 +258,10 @@
       <workItem from="1623684134239" duration="594000" />
       <workItem from="1623762562606" duration="1000000" />
       <workItem from="1623852708018" duration="3786000" />
+      <workItem from="1624198451012" duration="3131000" />
+      <workItem from="1624695621528" duration="4030000" />
+      <workItem from="1624735083430" duration="596000" />
+      <workItem from="1624776860829" duration="7585000" />
     </task>
     <servers />
   </component>

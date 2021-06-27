@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,28 +11,38 @@ public class PauseMenu : MonoBehaviour
     public GameObject SettingUI;
     public int currentSceneIndex;
     public Animator PanelAnimator;
-    void Update()
+
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (gameIsPaused == true)
-            {
-                StartCoroutine(Resume());
-            }
-            else
-            {
-                Paused();
-            }
+            Paused();
+            // if (gameIsPaused)
+            // {
+            //     Resume();
+            // }
         }
     }
 
+    public void Resume()
+    {
+        StartCoroutine(ResumeCOR());
+    }
 
-    void Paused()
+    public void Paused()
+    {
+        StartCoroutine(PausedCOR());
+    }
+
+
+    // ReSharper disable Unity.PerformanceAnalysis
+    private IEnumerator PausedCOR()
     {
         PlayerMovement.instance.enabled = false;
         PauseMenuUI.SetActive(true);
         // ReSharper disable once Unity.PreferAddressByIdToGraphicsParams
         PanelAnimator.SetBool("isActive", true);
+        yield return new WaitForSeconds(1);
         LoadAndSaveData.instance.SaveData();
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.rb.velocity = Vector3.zero;
@@ -42,11 +53,11 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = true;
     }
 
-    public IEnumerator Resume()
+    public IEnumerator ResumeCOR()
     {
-        // ReSharper disable once Unity.PreferAddressByIdToGraphicsParams
-        PanelAnimator.SetBool("isActive", true);
-        yield return new WaitForSeconds(1);
+        // ReSharper disable once Unity.PreferAddr  essByIdToGraphicsParams
+        PanelAnimator.SetBool("isActive", false);
+        yield return new WaitForSeconds(2);
         PauseMenuUI.SetActive(false);
         PlayerMovement.instance.playerCollider.enabled = true;
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
@@ -70,7 +81,7 @@ public class PauseMenu : MonoBehaviour
     {
 
         LoadAndSaveData.instance.SaveStatistics();
-        StartCoroutine(Resume());
+        StartCoroutine(ResumeCOR());
         SceneManager.LoadSceneAsync("MainMenu");
 
     }

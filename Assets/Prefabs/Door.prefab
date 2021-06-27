@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelType: 1
+  sound: {fileID: 8300000, guid: ac608ec33ef028d4186a547fea3aa70d, type: 3}
