@@ -4,6 +4,8 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Security.Principal; 
+
 
 public class CharacterManager : MonoBehaviour
 {
@@ -32,6 +34,7 @@ public class CharacterManager : MonoBehaviour
     public Text NewPlayerPanelErrorText;
     public GameObject NewPlayerPanelErrorTextGameObject;
 
+    public string Datapath;
 
     public Toggle Didacticiel;
 
@@ -76,7 +79,12 @@ public class CharacterManager : MonoBehaviour
     public string Player9String = "NONE";
 
 
+    private void Start()
+    {
+        var user = Environment.UserName;
+        Datapath = "C:/Users" +"/" + user + "/";
 
+    }
 
     public void Update()
     {
@@ -149,9 +157,9 @@ public class CharacterManager : MonoBehaviour
         PlayerSelect.SetActive(true);
         PlayerSelectGameUiAnimator.SetBool("IsOpen", true);
         AudioManager.PlayClipAt(sound, transform.position);
-        if (File.Exists(Application.dataPath + "/Data/players/Player0.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player0.txt"))
         {
-            string SavePlayer0 = File.ReadAllText(Application.dataPath + "/Data/players/Player0.txt");
+            string SavePlayer0 = File.ReadAllText(Datapath + ".gub/Data/players/Player0.txt");
 
             Player0Text.text = SavePlayer0;
             Player0UI.SetActive(true);
@@ -162,9 +170,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player0UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player1.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player1.txt"))
         {
-            string SavePlayer1 = File.ReadAllText(Application.dataPath + "/Data/players/Player1.txt");
+            string SavePlayer1 = File.ReadAllText(Datapath + ".gub/Data/players/Player1.txt");
 
             Player1String = SavePlayer1;
             Player1Text.text = SavePlayer1;
@@ -176,9 +184,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player1UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player2.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player2.txt"))
         {
-            string SavePlayer2 = File.ReadAllText(Application.dataPath + "/Data/players/Player2.txt");
+            string SavePlayer2 = File.ReadAllText(Datapath + ".gub/Data/players/Player2.txt");
 
             Player2String = SavePlayer2;
             Player2Text.text = SavePlayer2;
@@ -190,9 +198,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player2UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player3.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player3.txt"))
         {
-            string SavePlayer3 = File.ReadAllText(Application.dataPath + "/Data/players/Player3.txt");
+            string SavePlayer3 = File.ReadAllText(Datapath + ".gub/Data/players/Player3.txt");
 
             Player3String = SavePlayer3;
             Player3Text.text = SavePlayer3;
@@ -205,9 +213,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player3UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player4.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player4.txt"))
         {
-            string SavePlayer4 = File.ReadAllText(Application.dataPath + "/Data/players/Player4.txt");
+            string SavePlayer4 = File.ReadAllText(Datapath + ".gub/Data/players/Player4.txt");
 
             Player4String = SavePlayer4;
             Player4Text.text = SavePlayer4;
@@ -219,9 +227,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player4UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player5.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player5.txt"))
         {
-            string SavePlayer5 = File.ReadAllText(Application.dataPath + "/Data/players/Player5.txt");
+            string SavePlayer5 = File.ReadAllText(Datapath + ".gub/Data/players/Player5.txt");
 
             Player5String = SavePlayer5;
             Player5Text.text = SavePlayer5;
@@ -233,9 +241,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player5UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player6.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player6.txt"))
         {
-            string SavePlayer6 = File.ReadAllText(Application.dataPath + "/Data/players/Player6.txt");
+            string SavePlayer6 = File.ReadAllText(Datapath + ".gub/Data/players/Player6.txt");
 
             Player6String = SavePlayer6;
             Player6Text.text = SavePlayer6;
@@ -248,9 +256,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player6UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player7.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player7.txt"))
         {
-            string SavePlayer7 = File.ReadAllText(Application.dataPath + "/Data/players/Player7.txt");
+            string SavePlayer7 = File.ReadAllText(Datapath + ".gub/Data/players/Player7.txt");
 
             Player7String = SavePlayer7;
             Player7Text.text = SavePlayer7;
@@ -262,9 +270,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player7UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player8.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player8.txt"))
         {
-            string SavePlayer8 = File.ReadAllText(Application.dataPath + "/Data/players/Player8.txt");
+            string SavePlayer8 = File.ReadAllText(Datapath + ".gub/Data/players/Player8.txt");
 
             Player8String = SavePlayer8;
             Player8Text.text = SavePlayer8;
@@ -276,9 +284,9 @@ public class CharacterManager : MonoBehaviour
         {
             Player8UI.SetActive(false);
         }
-        if (File.Exists(Application.dataPath + "/Data/players/Player9.txt"))
+        if (File.Exists(Datapath + ".gub/Data/players/Player9.txt"))
         {
-            string SavePlayer9 = File.ReadAllText(Application.dataPath + "/Data/players/Player9.txt");
+            string SavePlayer9 = File.ReadAllText(Datapath + ".gub/Data/players/Player9.txt");
 
             Player9String = SavePlayer9;
             Player9Text.text = SavePlayer9;
@@ -385,7 +393,7 @@ public class CharacterManager : MonoBehaviour
 
     private void PlayerCreator()
     {
-        File.WriteAllText(Application.dataPath + "/Data/players/Player" + TempCharacterNumber + ".txt", TempCharacterName);
+        File.WriteAllText(Datapath + ".gub/Data/players/Player" + TempCharacterNumber + ".txt", TempCharacterName);
         PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Coints", 0);
         PlayerPrefs.SetInt("Player" + TempCharacterNumber + "SpeedPotion", 0);
        // PlayerPrefs.SetInt("Player" + TempCharacterNumber + "BigSpeedPotion", 0);
@@ -424,9 +432,17 @@ public class CharacterManager : MonoBehaviour
     }
 
 
-    public void DeletePlayer0()
+    public void DeletePlayer0(bool notif)
     {
-        MyNotifications.CallNotification("Partie Supprimée",2);
+        switch (notif)
+        {
+            case true:
+                MyNotifications.CallNotification("Partie Supprimée",2);
+                break;
+            case false:
+                break;
+        }
+        
         DeletePlayer(0);
         Character0creator();
         
@@ -477,7 +493,7 @@ public class CharacterManager : MonoBehaviour
 
     private void DeletePlayer(int characterId)
     {
-        File.Delete(Application.dataPath + "/Data/players/Player" + characterId + ".txt");
+        File.Delete(Datapath + ".gub/Data/players/Player" + characterId + ".txt");
         PlayerPrefs.DeleteKey("Player" + characterId + "Coints");
         PlayerPrefs.DeleteKey("Player" + characterId + "SpeedPotion");
         PlayerPrefs.DeleteKey("Player" + characterId + "BigSpeedPotion");
@@ -576,17 +592,17 @@ public class CharacterManager : MonoBehaviour
         musicAnim.SetTrigger("Transition");
         videoAnim.SetTrigger("TR");
         yield return new WaitForSeconds(waitTime);
-      Levelmanager.instance.lastLevelUnloked = PlayerPrefs.GetInt("Player" + CharacterManager.instance.CurrentCharacter + "lastlevelunloked");  
+      Levelmanager.instance.lastLevelUnloked = PlayerPrefs.GetInt("Player" + CurrentCharacter + "lastlevelunloked");  
         //if is the first time to load this player
       if (Levelmanager.instance.lastLevelUnloked == 0)
       {
           //if didacticiel is active
          
-          if (PlayerPrefs.GetInt("Player" + CharacterManager.instance.CurrentCharacter + "Didacticiel") == 1)
+          if (PlayerPrefs.GetInt("Player" + CurrentCharacter + "Didacticiel") == 1)
           {
              Levelmanager.instance.lastLevelUnloked = 1; 
           }
-          if (PlayerPrefs.GetInt("Player" + CharacterManager.instance.CurrentCharacter + "Didacticiel") == 0)
+          if (PlayerPrefs.GetInt("Player" + CurrentCharacter + "Didacticiel") == 0)
           {
               Levelmanager.instance.lastLevelUnloked = 2; 
           }
