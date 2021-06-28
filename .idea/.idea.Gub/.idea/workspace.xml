@@ -2,32 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa2e57d-5acd-4fd9-8a57-19dc3aaec0c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Documents/Gub/Data/players/Player0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documents/Gub/Data/players/null.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Canvas.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/credits/Canvas.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/Content.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/credits/Content.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/credits/canvas.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/credits/canvas.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player0.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/Player1.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/null.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/players/null.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Backgrounds/New Background ( Update 1.9 )/png/2048x1024/backgraound/NewBackgraound 2048x1024 (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Backgrounds/New Background ( Update 1.9 )/png/2048x1024/backgraound/NewBackgraound 2048x1024 (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Backgrounds/New Background ( Update 1.9 )/png/2048x1024/backgraound/NewBackgraound 2048x1024 (2).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Backgrounds/New Background ( Update 1.9 )/png/2048x1024/backgraound/NewBackgraound 2048x1024 (2).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/gubinstallerlogo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -73,8 +59,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Trello.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKzM4e0JArUcQv0OGgSBpUHguy" />
@@ -162,7 +148,7 @@
       <workItem from="1624695621528" duration="4030000" />
       <workItem from="1624735083430" duration="596000" />
       <workItem from="1624776860829" duration="9591000" />
-      <workItem from="1624868267276" duration="7487000" />
+      <workItem from="1624868267276" duration="8306000" />
     </task>
     <servers />
   </component>
