@@ -2,78 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa2e57d-5acd-4fd9-8a57-19dc3aaec0c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Water Animation/2D view ( Update 1.9 )/512x512/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Water Animation/2D view ( Update 1.9 )/512x512/water.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Water Animation/2D view ( Update 1.9 )/512x512/watertilemap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Water Animation/2D view ( Update 1.9 )/512x512/watertilemap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/Water[L].asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/Water[L].asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/Water[R].asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/Water[R].asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/water.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/water.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_11.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_11.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_12.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_12.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_13.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_13.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_14.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_14.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_15.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_15.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_9.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/water/watertilemap_9.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/Spike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/Spike.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spike.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spike.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level10.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level10.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level8.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level8.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level9.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level9.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spike.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spike.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Tiles/2.5D Tiles/Spring/png/512x512/Column.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Tiles/2.5D Tiles/Spring/png/512x512/Column.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Tiles/2.5D Tiles/Spring/png/512x512/GrassJoinHillRight2_Downshadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Tiles/2.5D Tiles/Spring/png/512x512/GrassJoinHillRight2_Downshadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Palettes/Tilesheet1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/Tilesheet1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NotificationManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NotificationManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menu/PlayerSelect.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menu/PlayerSelect.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Down.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Left&amp;Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Left&amp;Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Enemies/Enemies/png/64x64/Spike_Up.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Autumn Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Autumn Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Autumn Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Autumn Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Flower-3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Winter Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/BayatGames/Free Platform Game Assets/Environments/New Details ( Update 1.9 )/8x/Winter Tree.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imports/Sprites/Backgrounds/White Stripes.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imports/Sprites/Backgrounds/White Stripes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player0.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level7.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEmpti.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyPatrol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +49,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spike.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/66/0afe47f5/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/41/f67ef837/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Editor/UsageExampleEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,15 +77,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LoadSpecificScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Trello/Trello.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ErrorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyPatrol.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" />
       <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PotionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Trello Bug Tracker - Pro/Example/Scripts/UsageExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CharacterManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKzM4e0JArUcQv0OGgSBpUHguy" />
@@ -210,6 +176,7 @@
       <workItem from="1624776860829" duration="9591000" />
       <workItem from="1624868267276" duration="8925000" />
       <workItem from="1624956205018" duration="6200000" />
+      <workItem from="1625053965405" duration="6268000" />
     </task>
     <servers />
   </component>

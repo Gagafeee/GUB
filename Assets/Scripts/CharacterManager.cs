@@ -40,43 +40,62 @@ public class CharacterManager : MonoBehaviour
 
     public GameObject Player0UI;
     public Text Player0Text;
-
+    public Text Player0CointValue;
+    public Text Player0Level;
 
     public GameObject Player1UI;
     public Text Player1Text;
-    public string Player1String = "NONE";
+    public string Player1String = "PLAYERNAME";
+    public Text Player1CointValue;
+    public Text Player1Level;
 
     public GameObject Player2UI;
     public Text Player2Text;
-    public string Player2String = "NONE";
+    public string Player2String = "PLAYERNAME";
+    public Text Player2CointValue;
+    public Text Player2Level;
 
     public GameObject Player3UI;
     public Text Player3Text;
-    public string Player3String = "NONE";
+    public string Player3String = "PLAYERNAME";
+    public Text Player3CointValue;
+    public Text Player3Level;
 
     public GameObject Player4UI;
     public Text Player4Text;
-    public string Player4String = "NONE";
+    public string Player4String = "PLAYERNAME";
+    public Text Player4CointValue;
+    public Text Player4Level;
 
     public GameObject Player5UI;
     public Text Player5Text;
-    public string Player5String = "NONE";
+    public string Player5String = "PLAYERNAME";
+    public Text Player5CointValue;
+    public Text Player5Level;
 
     public GameObject Player6UI;
     public Text Player6Text;
-    public string Player6String = "NONE";
+    public string Player6String = "PLAYERNAME";
+    public Text Player6CointValue;
+    public Text Player6Level;
 
     public GameObject Player7UI;
     public Text Player7Text;
-    public string Player7String = "NONE";
+    public string Player7String = "PLAYERNAME";
+    public Text Player7CointValue;
+    public Text Player7Level;
 
     public GameObject Player8UI;
     public Text Player8Text;
-    public string Player8String = "NONE";
+    public string Player8String = "PLAYERNAME";
+    public Text Player8CointValue;
+    public Text Player8Level;
 
     public GameObject Player9UI;
     public Text Player9Text;
-    public string Player9String = "NONE";
+    public string Player9String = "PLAYERNAME";
+    public Text Player9CointValue;
+    public Text Player9Level;
 
 
     private void Start()
@@ -160,11 +179,12 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player0.txt"))
         {
             string SavePlayer0 = File.ReadAllText(Datapath + ".gub/Data/players/Player0.txt");
-
             Player0Text.text = SavePlayer0;
             Player0UI.SetActive(true);
+            Player0CointValue.text = PlayerPrefs.GetInt("Player0" + "Coints").ToString();
+            Player0Level.text = PlayerPrefs.GetInt("Player0"  + "lastlevelunloked").ToString();
             CharacterNumber++;
-            // Debug.Log("load player 0");
+            Debug.Log("load player 0");
         }
         else
         {
@@ -173,12 +193,14 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player1.txt"))
         {
             string SavePlayer1 = File.ReadAllText(Datapath + ".gub/Data/players/Player1.txt");
-
             Player1String = SavePlayer1;
             Player1Text.text = SavePlayer1;
+            Player1CointValue.text = PlayerPrefs.GetInt("Player1" + "Coints").ToString();
+            Player1Level.text = PlayerPrefs.GetInt("Player1"  + "lastlevelunloked").ToString();
+            
             Player1UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 1");
+            Debug.Log("load player 1");
         }
         else
         {
@@ -187,12 +209,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player2.txt"))
         {
             string SavePlayer2 = File.ReadAllText(Datapath + ".gub/Data/players/Player2.txt");
-
             Player2String = SavePlayer2;
             Player2Text.text = SavePlayer2;
+            Player2CointValue.text = PlayerPrefs.GetInt("Player2" + "Coints").ToString();
+            Player2Level.text = PlayerPrefs.GetInt("Player2"  + "lastlevelunloked").ToString();
             Player2UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 2");
+            Debug.Log("load player 2");
         }
         else
         {
@@ -201,12 +224,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player3.txt"))
         {
             string SavePlayer3 = File.ReadAllText(Datapath + ".gub/Data/players/Player3.txt");
-
             Player3String = SavePlayer3;
             Player3Text.text = SavePlayer3;
+            Player3CointValue.text = PlayerPrefs.GetInt("Player3" + "Coints").ToString();
+            Player3Level.text = PlayerPrefs.GetInt("Player3"  + "lastlevelunloked").ToString();
             Player3UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 3");
+            Debug.Log("load player 3");
 
         }
         else
@@ -216,12 +240,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player4.txt"))
         {
             string SavePlayer4 = File.ReadAllText(Datapath + ".gub/Data/players/Player4.txt");
-
             Player4String = SavePlayer4;
             Player4Text.text = SavePlayer4;
+            Player4CointValue.text = PlayerPrefs.GetInt("Player4" + "Coints").ToString();
+            Player4Level.text = PlayerPrefs.GetInt("Player4"  + "lastlevelunloked").ToString();
             Player4UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 4");
+            Debug.Log("load player 4");
         }
         else
         {
@@ -230,12 +255,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player5.txt"))
         {
             string SavePlayer5 = File.ReadAllText(Datapath + ".gub/Data/players/Player5.txt");
-
             Player5String = SavePlayer5;
             Player5Text.text = SavePlayer5;
+            Player5CointValue.text = PlayerPrefs.GetInt("PlayerX" + "Coints").ToString();
+            Player5Level.text = PlayerPrefs.GetInt("PlayerX"  + "lastlevelunloked").ToString();
             Player5UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 5");
+            Debug.Log("load player 5");
         }
         else
         {
@@ -244,12 +270,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player6.txt"))
         {
             string SavePlayer6 = File.ReadAllText(Datapath + ".gub/Data/players/Player6.txt");
-
             Player6String = SavePlayer6;
             Player6Text.text = SavePlayer6;
+            Player6CointValue.text = PlayerPrefs.GetInt("Player6" + "Coints").ToString();
+            Player6Level.text = PlayerPrefs.GetInt("Player6"  + "lastlevelunloked").ToString();
             Player6UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 6");
+            Debug.Log("load player 6");
 
         }
         else
@@ -259,12 +286,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player7.txt"))
         {
             string SavePlayer7 = File.ReadAllText(Datapath + ".gub/Data/players/Player7.txt");
-
             Player7String = SavePlayer7;
             Player7Text.text = SavePlayer7;
+            Player7CointValue.text = PlayerPrefs.GetInt("Player7" + "Coints").ToString();
+            Player7Level.text = PlayerPrefs.GetInt("Player7"  + "lastlevelunloked").ToString();
             Player7UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 7");
+            Debug.Log("load player 7");
         }
         else
         {
@@ -273,12 +301,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player8.txt"))
         {
             string SavePlayer8 = File.ReadAllText(Datapath + ".gub/Data/players/Player8.txt");
-
             Player8String = SavePlayer8;
             Player8Text.text = SavePlayer8;
+            Player8CointValue.text = PlayerPrefs.GetInt("Player8" + "Coints").ToString();
+            Player8Level.text = PlayerPrefs.GetInt("Player8"  + "lastlevelunloked").ToString();
             Player8UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 8");
+            Debug.Log("load player 8");
         }
         else
         {
@@ -287,12 +316,13 @@ public class CharacterManager : MonoBehaviour
         if (File.Exists(Datapath + ".gub/Data/players/Player9.txt"))
         {
             string SavePlayer9 = File.ReadAllText(Datapath + ".gub/Data/players/Player9.txt");
-
             Player9String = SavePlayer9;
             Player9Text.text = SavePlayer9;
+            Player9CointValue.text = PlayerPrefs.GetInt("Player9" + "Coints").ToString();
+            Player9Level.text = PlayerPrefs.GetInt("Player9"  + "lastlevelunloked").ToString();
             Player9UI.SetActive(true);
             CharacterNumber++;
-            // Debug.Log("load player 9");
+            Debug.Log("load player 9");
 
         }
         else

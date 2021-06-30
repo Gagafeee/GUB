@@ -132,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
     {
         while (isInvincible)
         {
-            graphics.color = new Color(1f, 1f, 1f, 0f);
+            graphics.color = new Color(0f, 0.8399844f, 1f, 1f);
             yield return new WaitForSeconds(invincibilityFlashDelay);
             graphics.color = new Color(1f, 1f, 1f, 1f);
             yield return new WaitForSeconds(invincibilityFlashDelay);
