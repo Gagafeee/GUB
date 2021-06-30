@@ -7,6 +7,7 @@ public class DeathZone : MonoBehaviour
     public int damageOnCollision = 20;
     private Animator fadeSystem;
     public GameObject chekpoint;
+
     private void Awake()
     {
 
@@ -17,6 +18,8 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            CameraFollow.instance.active = false;
+            AudioManager.instance.PlayClipAt(PlayerHealth.instance.hitSound,transform.position);
             PlayerMovement.instance.Player.GetComponent<Animator>().enabled = false;
             PlayerMovement.instance.enabled = false;
             StartCoroutine(ReplacePlayer(collision));
@@ -33,9 +36,11 @@ public class DeathZone : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
-            playerHealth.TakeDamage(damageOnCollision);
+            playerHealth.TakeDamage(damageOnCollision, false);
             PlayerMovement.instance.enabled = true;
         }
+
+        CameraFollow.instance.active = true;
         fadeSystem.SetTrigger("OUT");
     }
 }

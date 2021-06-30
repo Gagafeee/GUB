@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            TakeDamage(60);
+            TakeDamage(60, true);
         }
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 30)
@@ -69,12 +69,14 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool sound)
     {
         if (!isInvincible)
         {
-
-            AudioManager.instance.PlayClipAt(hitSound, transform.position);
+            if (sound)
+            {
+                AudioManager.instance.PlayClipAt(hitSound, transform.position);
+            }
             StartCoroutine(TakeDamageAnnimation(damage));
             LoadAndSaveData.instance.SaveData();
             isInvincible = true;

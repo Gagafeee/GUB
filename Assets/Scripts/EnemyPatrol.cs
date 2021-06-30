@@ -35,7 +35,7 @@ public class EnemyPatrol : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
-            playerHealth.TakeDamage(damageOnCollision);
+            playerHealth.TakeDamage(damageOnCollision, true);
         }
     }
 }

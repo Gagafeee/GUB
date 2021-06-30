@@ -17,6 +17,7 @@ namespace DG
         public Dropdown reportOptionsDropDown;
         public Painter painter;
         public List<RawImage> screenshotSlots;
+        public string reportcode;
 
         bool paused;
 
@@ -42,7 +43,12 @@ namespace DG
                 {
                     screenshots.Add((Texture2D)ri.texture);
                 }
-                UsageExample.Instance.SendReport(inputTitle.text, inputDescription.text, reportOptionsDropDown.captionText.text, screenshots);
+                
+                reportcode = "[" + Random.Range(0, 9) + Random.Range(0, 9) +
+                                 Random.Range(0, 9) + Random.Range(0, 9) + Random.Range(0, 9) + Random.Range(0, 9) +
+                                 Random.Range(0, 9) + "]"; 
+                
+                UsageExample.Instance.SendReport(inputTitle.text + " ", inputDescription.text, reportOptionsDropDown.captionText.text, screenshots);
 
                 // After reporting We clear the input fields so they are ready to be used again
                 inputTitle.text = "";

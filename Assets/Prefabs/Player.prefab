@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 150
   climbSpeed: 150
-  jumpForce: 300
+  jumpForce: 250
   pos: {x: 0, y: 0, z: 0}
   isClimbing: 0
   groundCheck: {fileID: 2473609670074564740}
@@ -192,8 +192,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.001460929, y: 0.0054254346}
-  m_Size: {x: 0.7110718, y: 0.7173158}
+  m_Offset: {x: 0.0065158065, y: 0.022503987}
+  m_Size: {x: 0.6552472, y: 0.68315864}
   m_Direction: 0
 --- !u!1 &2473609670074564741
 GameObject:

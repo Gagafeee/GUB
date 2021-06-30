@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3516498157044232613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.035, y: -0.703, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.001, y: -0.293, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 3516498157339171991}
   m_RootOrder: 0
@@ -81,6 +81,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -131,10 +133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 150
   climbSpeed: 150
-  jumpForce: 300
+  jumpForce: 250
+  pos: {x: 0, y: 0, z: 0}
   isClimbing: 0
   groundCheck: {fileID: 3516498157044232614}
-  groundCheckRadius: 0.4
+  groundCheckRadius: 0.09
   collisionLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -174,7 +177,7 @@ Animator:
   m_GameObject: {fileID: 3516498157339171992}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ee581c27830c8fe4885229579ad0f275, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14109d2f0dc8f0c4c9b1999ab02f153a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,6 +207,8 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   hitSound: {fileID: 8300000, guid: ec82a7aa63150cc42a90f434a4537377, type: 3}
   GameIsPaused: 0
+  PayerHeartAnnimator: {fileID: 0}
+  isDie: 0
 --- !u!70 &3516498157339171993
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -217,6 +222,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010361789, y: 0.0020387534}
-  m_Size: {x: 0.7228952, y: 0.73591304}
+  m_Offset: {x: -0.001460929, y: 0.0054254346}
+  m_Size: {x: 0.7110718, y: 0.7173158}
   m_Direction: 0

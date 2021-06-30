@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour
     public Vector3 posOffset;
     public static CameraFollow instance;
     private Vector3 velocity;
+    public bool active = true;
 
 
     public void Awake()
@@ -15,7 +16,11 @@ public class CameraFollow : MonoBehaviour
     }
     void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + posOffset, ref velocity, timeOffset);
+        if(active)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + posOffset,
+                ref velocity, timeOffset);
+        }
 
     }
 }

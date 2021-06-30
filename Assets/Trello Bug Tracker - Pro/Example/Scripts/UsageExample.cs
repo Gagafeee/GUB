@@ -148,7 +148,7 @@ namespace DG
             }
 #endif
             // this one is meant to be replaced with relevant data about your game
-            string relevantData = "Deaths: 100, coins: 50, respect: 0.5";
+            string relevantData = "["+ Application.version + " : "  + UIManager._instance.reportcode +"]";
             yield return trello.SetUpAttachmentInCardRoutine(cardID, "MoreData.txt", relevantData);
 
             /**
@@ -164,16 +164,22 @@ namespace DG
             inProgressUI.SetActive(false);
 
             // Now we show the success text to let the user know the action has been completed
-            StartCoroutine(SetActiveForSecondsRoutine(true, 2));
+            StartCoroutine(SetActiveForSecondsRoutine(true, 10 , UIManager.Instance.reportcode));
         }
 
         // Sets gameObject active or inactive for timeInSeconds
-        public IEnumerator SetActiveForSecondsRoutine(bool notiftype,float timeInSeconds)
+        public IEnumerator SetActiveForSecondsRoutine(bool notiftype,float timeInSeconds, string reportcode)
         {
             switch (notiftype)
             {
                case true:
-                   MyNotifications.CallNotification("Reported Successful to server", timeInSeconds);
+                   MyNotifications.CallNotification("Reported Successful to server" + " Your report code is : " + reportcode + " copied in clipboard", timeInSeconds);
+                   var editor = new TextEditor
+                   {
+                       text = reportcode
+                   };
+                   editor.SelectAll();
+                   editor.Copy();
                    yield break;
                case false:
                    MyNotifications.CallNotification("Please fill 'Name' and 'Description'", timeInSeconds);
@@ -184,14 +190,18 @@ namespace DG
 
         public Coroutine SendReport(string title, string description, string listName, List<Texture2D> screenshots)
         {
+            
             // if both the title and description are empty show warning message to avoid spam
             if (title == "" && description == "" || title == " " || description == " ")
             {
-                StartCoroutine(SetActiveForSecondsRoutine(false,2));
+                StartCoroutine(SetActiveForSecondsRoutine(false,2, ""));
                 return null;
+                 
             }
 
-            TrelloCard card = trello.NewCard(title, description, listName);
+            var reporttitle = Application.version + " : " + UIManager._instance.reportcode;
+
+            TrelloCard card = trello.NewCard(title + reporttitle, description, listName);
             return StartCoroutine(SendReportRoutine(card, screenshots));
         }
 
