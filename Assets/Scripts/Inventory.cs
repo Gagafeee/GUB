@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.IO;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -66,48 +67,11 @@ public class Inventory : MonoBehaviour
     public GameObject JumpPotionScreenImageGameObject;
     public GameObject JumpPotionScreenRemplissageText;
     public GameObject JumpPotionScreen;
-    //   public Text SpeedPotionText;
-    //   public Image SpeedPotionImage;
-    //   public int CurentSpeedPotion;
-    //   public GameObject ButtonSpeedPotion;
-    //   public GameObject SpeedPotionIcone;
-    //   public Text SpeedPotionIconeText;
-    //   public GameObject SpeedPotionInfoText;
-    //   public int ________________________________________;
-    //   public Text BigSpeedPotionText;
-    //   public Image BigSpeedPotionImage;
-    //   public int CurentBigSpeedPotion;
-    //   public GameObject ButtonBigSpeedPotion;
-    //   public int BigSpeedPotionTimeExecution = 10;
-    //   public bool BigSpeedPotionIsInUse;
-    //   public GameObject BigSpeedPotionIcone;
-    //   public Text BigSpeedPotionIconeText;
-    //   public GameObject BigSpeedPotionInfoText;
-    //   public int _______________________________________;
-    //   public Text HealPotionText;
-    //   public Image HealPotionImage;
-    //   public int CurentHealPotion;
-    //   public GameObject ButtonHealPotion;
-    //   public int HealPotionTimeExecution = 10;
-    //   public bool HealPotionIsInUse;
-    //   public GameObject HealPotionIcone;
-    //   public Text HealPotionIconeText;
-    //   public GameObject HealPotionInfoText;
-    //   public int ______________________________________;
-    //   public Text BigHealPotionText;
-    //   public Image BigHealPotionImage;
-    //   public int CurentBigHealPotion;
-    //   public GameObject ButtonBigHealPotion;
-    //   public int BigHealPotionTimeExecution = 10;
-    //   public bool BigHealPotionIsInUse;
-    //   public GameObject BigHealPotionIcone;
-    //   public Text BigHealPotionIconeText;
-    //   public GameObject BigHealPotionInfoText;
+
 
     public void Start()
     {
         CloseInventory();
-
     }
     public void Awake()
     {
@@ -125,16 +89,12 @@ public class Inventory : MonoBehaviour
         {
             OpenInventory();
         }
-        else
+        else if (Input.GetKeyDown(KeyCode.E) && InventoryIsOpen == true)
         {
-            if (Input.GetKeyDown(KeyCode.E) && InventoryIsOpen == true)
-            {
-                CloseInventory();
-            }
-
+            CloseInventory();
         }
 
-
+        
         RefreshInventory();
     }
     public void OpenInventory()

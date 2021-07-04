@@ -17,10 +17,13 @@ public class Portal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            this.GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
             AudioManager.instance.PlayClipAt(sound, transform.position);
             EndLevelPanelManager.Instance.DisplayPanel();
-            
+            CurrentSceneManager.instance.UpdatePos(gameObject);
+            CurrentSceneManager.instance.SetRespawnPoint(gameObject.transform.position);
+            CurrentSceneManager.instance.isTheFirstEnterInLevel = false;
+            LoadAndSaveData.instance.SaveData();
 
         }
         

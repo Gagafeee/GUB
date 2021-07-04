@@ -174,8 +174,11 @@ public class CharacterManager : MonoBehaviour
     {
         
         PlayerSelect.SetActive(true);
+        Debug.Log("Active");
         PlayerSelectGameUiAnimator.SetBool("IsOpen", true);
+        Debug.Log("Trigger");
         AudioManager.PlayClipAt(sound, transform.position);
+        Debug.Log("Sound");
         if (File.Exists(Datapath + ".gub/Data/players/Player0.txt"))
         {
             string SavePlayer0 = File.ReadAllText(Datapath + ".gub/Data/players/Player0.txt");

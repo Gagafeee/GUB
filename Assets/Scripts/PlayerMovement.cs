@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetButtonDown("Jump") && isGrounded && !isClimbing)
             {
-               // Statistic.Instance.jumps++;
+                Statistic.Instance.jumps++;
                 isJumping = true;
             }
 
