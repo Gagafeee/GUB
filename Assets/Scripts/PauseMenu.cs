@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,20 +8,23 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject PauseMenuUI;
-    public AudioLowPassFilter AudioLowPassFilter;
     public GameObject SettingUI;
     public int currentSceneIndex;
     public Animator PanelAnimator;
+    public GameObject audioManager;
+
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!Input.GetKeyDown(KeyCode.Escape)) return;
+        Paused();
+        if (gameIsPaused)
         {
-            Paused();
-            // if (gameIsPaused)
-            // {
-            //     Resume();
-            // }
+            Resume();
         }
     }
 
@@ -48,8 +52,8 @@ public class PauseMenu : MonoBehaviour
         PlayerMovement.instance.rb.velocity = Vector3.zero;
         PlayerMovement.instance.playerCollider.enabled = false;
         PlayerMovement.instance.moveSpeed = 0;
-        AudioLowPassFilter.cutoffFrequency = 540;
-        AudioLowPassFilter.lowpassResonanceQ = 2;
+        audioManager.GetComponent<AudioLowPassFilter>().cutoffFrequency = 540;
+        audioManager.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = 2;
         gameIsPaused = true;
     }
 
@@ -62,8 +66,8 @@ public class PauseMenu : MonoBehaviour
         PlayerMovement.instance.playerCollider.enabled = true;
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
         PlayerMovement.instance.moveSpeed = 150;
-        AudioLowPassFilter.cutoffFrequency = 6700;
-        AudioLowPassFilter.lowpassResonanceQ = 1;
+        audioManager.GetComponent<AudioLowPassFilter>().cutoffFrequency = 22000;
+        audioManager.GetComponent<AudioLowPassFilter>().lowpassResonanceQ = 1;
         gameIsPaused = false;
         PlayerMovement.instance.enabled = true;
     }

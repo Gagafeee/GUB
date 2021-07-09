@@ -12,6 +12,7 @@ TagManager:
   - PlayerSuivi
   - Items
   - Console
+  - AudioManager
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,9 +8,11 @@ public class LoadSpecificScene : MonoBehaviour
     public Animator fadeSystem;
     public AudioClip sound;
     public static LoadSpecificScene instance;
+
+
     private void Awake()
-    {
-            fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
+    { 
+        fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
         instance = this;
         return;
         
@@ -19,7 +22,7 @@ public class LoadSpecificScene : MonoBehaviour
     /*LevelType :
      0 = menu
      1 = next game scene
-     2 = crédit scene
+     2 = credit scene
      */ 
     public void loadScene(int LevelType, bool displayFadeOut)
     {
@@ -54,7 +57,10 @@ public class LoadSpecificScene : MonoBehaviour
         /*set graphique + sound*/
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
+        var audiomanager = GameObject.FindGameObjectWithTag("AudioManager");
+        Destroy(audiomanager);
         SceneManager.LoadScene("MainMenu");
+
         
     }
     
@@ -79,10 +85,12 @@ public class LoadSpecificScene : MonoBehaviour
         else if (nextLevelId <= Levelmanager.instance.levelIndex)
         {
             SceneManager.LoadSceneAsync(nextLevelId);
+
         }
         
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public IEnumerator loadCreditScene()
     {
 
@@ -91,5 +99,6 @@ public class LoadSpecificScene : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene("Credits");
+ 
     }
 }

@@ -1,11 +1,30 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CurrentSceneManager : MonoBehaviour
 {
     public Vector3 RespawnPoint;
     public static CurrentSceneManager instance;
     public bool isTheFirstEnterInLevel = true;
+
+ private void Start()
+ {
+     if (SceneManager.GetActiveScene().name == "MainMenu")
+     {
+         AudioManager.instance.SelectPlaylist("MainMenu");
+         return;
+     }
+     if (SceneManager.GetActiveScene().name == "Credits")
+     {
+         AudioManager.instance.SelectPlaylist("Credits");
+         return;
+     }
+     AudioManager.instance.SelectPlaylist(SceneManager.GetActiveScene().name);
+     
+ }
 
     private void Awake()
     {

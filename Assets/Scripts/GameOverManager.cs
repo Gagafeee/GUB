@@ -25,7 +25,7 @@ public class GameOverManager : MonoBehaviour
     {
         CointInventory.instance.RemoveCoins(CointInventory.instance.coinsCount / 2);
         AudioSource.PlayClipAtPoint(sound, transform.position);
-        AudioLowPassFilter.cutoffFrequency = 145;
+      
         gameOverUI.SetActive(true);
         LoadAndSaveData.instance.SaveData();
 
@@ -34,7 +34,7 @@ public class GameOverManager : MonoBehaviour
 
     public void RetryButton()
     {
-        AudioLowPassFilter.cutoffFrequency = 6700;
+        
         PlayerPrefs.SetFloat("Player" + CharacterManager.instance.CurrentCharacter + "StartPosX", -46);
         PlayerPrefs.SetFloat("Player" + CharacterManager.instance.CurrentCharacter + "StartPosY", 3);
         PlayerPrefs.SetFloat("Player" + CharacterManager.instance.CurrentCharacter + "StartPosZ", 0);
@@ -45,6 +45,8 @@ public class GameOverManager : MonoBehaviour
 
     public void MainMenuButton()
     {
+        var audiomanager = GameObject.FindGameObjectWithTag("AudioManager");
+        Destroy(audiomanager);
         SceneManager.LoadScene("MainMenu");
     }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -10,29 +11,84 @@ public class AudioManager : MonoBehaviour
     public AudioMixerGroup soundMusicMixer;
     public static AudioManager instance;
     public AudioMixer audioMixer;
+    public AudioClip menuMusique;
+    public AudioClip creditMusique;
+    public bool FirstLevel = true;
 
-    private void Awake()
+
+
+
+private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if (instance != null)
         {
             Debug.LogWarning("Il y a plus d'une instance de AudioManager dans la scène");
-            return;
+            var audiomanager = GameObject.FindGameObjectWithTag("AudioManager");
+            Destroy(audiomanager);
+            Debug.LogWarning("Patched !");
+            
         }
 
         instance = this;
-    }
-    void Start()
-    {
-        audioSource.clip = playlist[0];
-        audioSource.Play();
+        
     }
 
-    void Update()
+
+    public void SelectPlaylist(string scene)
     {
-        if (!audioSource.isPlaying)
+        if (FirstLevel)
         {
-            PlayNextSong();
+            switch (scene)
+            {
+                case "MainMenu":
+                    audioSource.clip = menuMusique;
+                    audioSource.Play();
+                    Debug.Log("Playing1");
+                    return;
+                case "Credits":
+                    audioSource.clip = creditMusique;
+                    audioSource.Play();
+                    Debug.Log("Playing2");
+                    return;
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                if (SceneManager.GetActiveScene().name != "Level" + i) continue;
+                audioSource.clip = playlist[0];
+                audioSource.Play();
+                Debug.Log("Playing3");
+                return;
+            }
+
+            Debug.LogError("AudioManager Doesn't work !");
         }
+        Debug.Log("Ignoring audio");
+
+
+    Debug.LogError("AudioManager Doesn't work [PlaylistSelect]");
+    }
+
+    private void Update()
+    {
+        if (audioSource.isPlaying) return;
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            audioSource.clip = menuMusique;
+            audioSource.Play();
+        }
+
+        if (SceneManager.GetActiveScene().name == "Credits")
+        {
+            Debug.LogError("Musique is down");
+        }
+        
+        if (SceneManager.GetActiveScene().name != "MainMenu" && SceneManager.GetActiveScene().name != "Credits")
+        {
+           PlayNextSong(); 
+        }
+        
     }
 
     void PlayNextSong()
@@ -53,5 +109,4 @@ public class AudioManager : MonoBehaviour
         Destroy(tempGo, clip.length);
         return audioSource;
     }
-
 }

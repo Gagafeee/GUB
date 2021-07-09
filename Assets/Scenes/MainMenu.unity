@@ -33682,7 +33682,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -179, y: -4, z: 0}
@@ -33748,7 +33748,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -176, y: -4, z: 0}
@@ -33880,7 +33880,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -46, y: -4, z: 0}
@@ -41263,7 +41263,7 @@ AudioLowPassFilter:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.3042292
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -41297,6 +41297,9 @@ MonoBehaviour:
   soundMusicMixer: {fileID: 1626088540416328064, guid: f64a6984c18be4547b70d30dc8e3540c,
     type: 2}
   audioMixer: {fileID: 24100000, guid: f64a6984c18be4547b70d30dc8e3540c, type: 2}
+  menuMusique: {fileID: 8300000, guid: 31bdb17d85adc3d4abb2e52b1dfd46cc, type: 3}
+  creditMusique: {fileID: 8300000, guid: e72cdea4391a6e949919a4e90b029465, type: 3}
+  FirstLevel: 1
 --- !u!82 &3458521662205820010
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41402,11 +41405,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3458521662205820015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.63, y: 1.0899999, z: 1.4179688}
+  m_LocalPosition: {x: 14.54, y: 1.6699998, z: -3.2480469}
   m_LocalScale: {x: 1, y: 1.025, z: 1}
   m_Children: []
-  m_Father: {fileID: 3458521663259112917}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3458521662205820015
 GameObject:
@@ -41424,7 +41427,7 @@ GameObject:
   - component: {fileID: 3458521662205820016}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41524,7 +41527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3458521663259112917}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3458521662787982201
 Transform:
@@ -41538,7 +41541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3458521663259112917}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3458521662800003100
 MonoBehaviour:
@@ -41587,7 +41590,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 298692181}
-  - {fileID: 3458521662205820011}
   - {fileID: 3458521662787982201}
   - {fileID: 3458521662725701836}
   m_Father: {fileID: 0}

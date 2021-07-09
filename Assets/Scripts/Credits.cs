@@ -5,7 +5,10 @@ public class Credits : MonoBehaviour
 {
     public void LoadMaintMenu()
     {
+        var audiomanager = GameObject.FindGameObjectWithTag("AudioManager");
+        Destroy(audiomanager);
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     private void Update()

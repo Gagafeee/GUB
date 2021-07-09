@@ -19,6 +19,7 @@ public class Portal : MonoBehaviour
         {
             GetComponent<BoxCollider2D>().enabled = false;
             AudioManager.instance.PlayClipAt(sound, transform.position);
+            AudioManager.instance.FirstLevel = false;
             EndLevelPanelManager.Instance.DisplayPanel();
             CurrentSceneManager.instance.UpdatePos(gameObject);
             CurrentSceneManager.instance.SetRespawnPoint(gameObject.transform.position);
