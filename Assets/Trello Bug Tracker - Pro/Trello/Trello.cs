@@ -178,7 +178,7 @@ namespace DG.TrelloAPI
         /// <param name="description">Description of the card.</param>
         /// <param name="listName">Name of the trello list to which the card will belong.</param>
         /// <param name="newCardsOnTop">Should the card be placed on top of the List?</param>
-        public TrelloCard NewCard(string title, string description, string listName, bool newCardsOnTop = true)
+        public TrelloCard NewCard(string title,string mail, string description, string listName, bool newCardsOnTop = true)
         {
             var card = NewCard(listName);
             card.name = title;

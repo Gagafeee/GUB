@@ -14,6 +14,7 @@ namespace DG
         public Canvas canvas;
         public InputField inputTitle;
         public InputField inputDescription;
+        public InputField inputMail;
         public Dropdown reportOptionsDropDown;
         public Painter painter;
         public List<RawImage> screenshotSlots;
@@ -48,11 +49,12 @@ namespace DG
                                  Random.Range(0, 9) + Random.Range(0, 9) + Random.Range(0, 9) + Random.Range(0, 9) +
                                  Random.Range(0, 9) + "]"; 
                 
-                UsageExample.Instance.SendReport(inputTitle.text + " ", inputDescription.text, reportOptionsDropDown.captionText.text, screenshots);
+                UsageExample.Instance.SendReport(inputTitle.text + " ",inputMail.text, inputDescription.text, reportOptionsDropDown.captionText.text, screenshots);
 
                 // After reporting We clear the input fields so they are ready to be used again
                 inputTitle.text = "";
                 inputDescription.text = "";
+                inputMail.text = "";
             }
         }
 

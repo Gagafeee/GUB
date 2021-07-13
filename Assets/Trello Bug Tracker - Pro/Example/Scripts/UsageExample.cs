@@ -148,15 +148,15 @@ namespace DG
             }
 #endif
             // this one is meant to be replaced with relevant data about your game
-            string relevantData = "["+ Application.version + " : "  + UIManager._instance.reportcode +"]";
+            var relevantData = "["+ Application.version + " : "  + UIManager._instance.reportcode +"]";
+            relevantData += "////Email : "+ card.mail;
             yield return trello.SetUpAttachmentInCardRoutine(cardID, "MoreData.txt", relevantData);
-
-            /**
-            *
-            *   Attach more convenient data to the card here
-            *
-            **/
-
+            
+            
+            //   Attach more convenient data to the card here
+            
+        
+            
             // Wait for one extra second to let the player read that his isssue is being processed
             yield return new WaitForSeconds(1);
 
@@ -188,27 +188,28 @@ namespace DG
             
         }
 
-        public Coroutine SendReport(string title, string description, string listName, List<Texture2D> screenshots)
+        public Coroutine SendReport(string title,string mail, string description, string listName, List<Texture2D> screenshots)
         {
             
             // if both the title and description are empty show warning message to avoid spam
             if (title == "" && description == "" || title == " " || description == " ")
             {
-                StartCoroutine(SetActiveForSecondsRoutine(false,2, ""));
+                StartCoroutine(SetActiveForSecondsRoutine(false,2, "Is empties"));
                 return null;
                  
             }
 
             var reporttitle = Application.version + " : " + UIManager._instance.reportcode;
-
-            TrelloCard card = trello.NewCard(title + reporttitle, description, listName);
+            TrelloCard card = trello.NewCard(title + reporttitle,mail, description, listName);
+            card.mail = mail;
             return StartCoroutine(SendReportRoutine(card, screenshots));
+            
         }
 
-        public Coroutine SendReport(string title, string description, string listName, Texture2D screenshot)
+        public Coroutine SendReport(string title,string mail, string description, string listName, Texture2D screenshot)
         {
             List<Texture2D> screenshots = new List<Texture2D> { screenshot };
-            return SendReport(title, description, listName, screenshots);
+            return SendReport(title,mail, description, listName, screenshots);
         }
     }
 }
