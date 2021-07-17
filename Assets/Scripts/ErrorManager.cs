@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 using IngameDebugConsole;
 using UnityEditor;
@@ -26,23 +27,19 @@ public class ErrorManager : MonoBehaviour
     {
         Console = GameObject.FindGameObjectWithTag("Console");
         ConsoleAnimator = GameObject.FindGameObjectWithTag("Console").GetComponent<Animator>();
-        
-        if (!File.Exists(CharacterManager.instance.Datapath + ".gub/Data/players/null.txt"))
+
+        if (!PlayerPrefs.HasKey("null"))
         {
-            Directory.CreateDirectory(CharacterManager.instance.Datapath + ".gub");
-            Directory.CreateDirectory(CharacterManager.instance.Datapath + ".gub/Data");
-            Directory.CreateDirectory(CharacterManager.instance.Datapath + ".gub/Data/players");
-            File.WriteAllText(CharacterManager.instance.Datapath + ".gub/Data/players/" +"null.txt", "/20&n");
-            //Error("Application.Data.Error : Missing File [playerdata]", "Solved");
+            PlayerPrefs.SetInt("null",0);
+           //Error("Application.Data.Error : Missing File [playerdata]", "Solved");
         }
         
-        if (!File.Exists(CharacterManager.instance.Datapath + ".gub/Data/players/Player0.txt"))
+        if (!PlayerPrefs.HasKey("Player0"))
         {
-            File.WriteAllText(CharacterManager.instance.Datapath + ".gub/Data/players/Player0.txt", "Partie0");
+            PlayerPrefs.SetString("Player0","Partie 0");
             //ErrorManager.instance.Error("Application.Data.Error : Missing Player[0]", "Solved");
             CharacterManager.instance.DeletePlayer0(false);
             CharacterManager.instance.play0();
-            MyNotifications.CallNotification("Bonjour", 4);
         }
 
 

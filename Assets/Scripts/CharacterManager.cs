@@ -11,6 +11,7 @@ public class CharacterManager : MonoBehaviour
 {
 
 
+
     public static CharacterManager instance;
     public string saveSeparator = "%";
     public int CharacterNumber;
@@ -33,8 +34,6 @@ public class CharacterManager : MonoBehaviour
     public Button NewPlayerPanelButton;
     public Text NewPlayerPanelErrorText;
     public GameObject NewPlayerPanelErrorTextGameObject;
-    [Space(15)]
-    public string Datapath;
     [Space(15)]
     public Toggle Didacticiel;
     [Space(30)]
@@ -96,16 +95,7 @@ public class CharacterManager : MonoBehaviour
     public string Player9String = "PLAYERNAME";
     public Text Player9CointValue;
     public Text Player9Level;
-  
-
-    private void Start()
-    {
-        Datapath = "C:/Users" +"/" + Environment.UserName + "/Documents/";
-
-       
-      
-    }
-
+    
     public void Update()
     {
         if (PlayerSelect.gameObject.activeSelf)
@@ -117,7 +107,7 @@ public class CharacterManager : MonoBehaviour
         }
         
         
-        if (NewPlayerPanelIsActive == true)
+        if (NewPlayerPanelIsActive)
         {
             string Tempvalue = InputFieldText.GetComponent<Text>().text;
 
@@ -136,11 +126,10 @@ public class CharacterManager : MonoBehaviour
                 Tempvalue.Contains("£") || Tempvalue.Contains("¤") || Tempvalue.Contains("%") ||
                 Tempvalue.Contains("§") || Tempvalue.Contains("²") || Tempvalue.Contains("?") ||
                 Tempvalue.Contains(".") || Tempvalue.Contains("`") || Tempvalue.Contains("'") ||
-                Tempvalue.Contains("#") || Tempvalue.Contains("&") || Tempvalue.Contains("@") ||
-                Tempvalue.Contains(" "))
+                Tempvalue.Contains("#") || Tempvalue.Contains("&") || Tempvalue.Contains("@"))
             {
                 NewPlayerPanelButton.interactable = false;
-                NewPlayerPanelErrorText.text = "Erreur : Ne pas mettre de caractères spéciaux Ni d'espace";
+                NewPlayerPanelErrorText.text = "Erreur : Ne pas mettre de caractères spéciaux";
                 NewPlayerPanelErrorTextGameObject.SetActive(true);
             }
             else
@@ -166,6 +155,7 @@ public class CharacterManager : MonoBehaviour
     {
         TempCharacterNumber = 0;
         TempCharacterName = "Partie0";
+        Didacticiel.isOn = true;
         PlayerCreator();
     }
 
@@ -180,10 +170,9 @@ public class CharacterManager : MonoBehaviour
         Debug.Log("Trigger");
         AudioManager.PlayClipAt(sound, transform.position);
         Debug.Log("Sound");
-        if (File.Exists(Datapath + ".gub/Data/players/Player0.txt"))
+        if (PlayerPrefs.HasKey("Player0"))
         {
-            string SavePlayer0 = File.ReadAllText(Datapath + ".gub/Data/players/Player0.txt");
-            Player0Text.text = SavePlayer0;
+            Player0Text.text = PlayerPrefs.GetString("Player0");
             Player0UI.SetActive(true);
             Player0CointValue.text = PlayerPrefs.GetInt("Player0" + "Coints").ToString();
             Player0Level.text = PlayerPrefs.GetInt("Player0"  + "lastlevelunloked").ToString();
@@ -194,11 +183,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player0UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player1.txt"))
+        if (PlayerPrefs.HasKey("Player1"))
         {
-            string SavePlayer1 = File.ReadAllText(Datapath + ".gub/Data/players/Player1.txt");
-            Player1String = SavePlayer1;
-            Player1Text.text = SavePlayer1;
+            Player1String = PlayerPrefs.GetString("Player1");
+            Player1Text.text = PlayerPrefs.GetString("Player1");
             Player1CointValue.text = PlayerPrefs.GetInt("Player1" + "Coints").ToString();
             Player1Level.text = PlayerPrefs.GetInt("Player1"  + "lastlevelunloked").ToString();
             
@@ -210,11 +198,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player1UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player2.txt"))
+        if (PlayerPrefs.HasKey("Player2"))
         {
-            string SavePlayer2 = File.ReadAllText(Datapath + ".gub/Data/players/Player2.txt");
-            Player2String = SavePlayer2;
-            Player2Text.text = SavePlayer2;
+            Player2String = PlayerPrefs.GetString("Player2");
+            Player2Text.text = PlayerPrefs.GetString("Player2");
             Player2CointValue.text = PlayerPrefs.GetInt("Player2" + "Coints").ToString();
             Player2Level.text = PlayerPrefs.GetInt("Player2"  + "lastlevelunloked").ToString();
             Player2UI.SetActive(true);
@@ -225,11 +212,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player2UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player3.txt"))
+        if (PlayerPrefs.HasKey("Player3"))
         {
-            string SavePlayer3 = File.ReadAllText(Datapath + ".gub/Data/players/Player3.txt");
-            Player3String = SavePlayer3;
-            Player3Text.text = SavePlayer3;
+            Player3String = PlayerPrefs.GetString("Player3");
+            Player3Text.text = PlayerPrefs.GetString("Player3");
             Player3CointValue.text = PlayerPrefs.GetInt("Player3" + "Coints").ToString();
             Player3Level.text = PlayerPrefs.GetInt("Player3"  + "lastlevelunloked").ToString();
             Player3UI.SetActive(true);
@@ -241,11 +227,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player3UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player4.txt"))
+        if (PlayerPrefs.HasKey("Player4"))
         {
-            string SavePlayer4 = File.ReadAllText(Datapath + ".gub/Data/players/Player4.txt");
-            Player4String = SavePlayer4;
-            Player4Text.text = SavePlayer4;
+            Player4String = PlayerPrefs.GetString("Player4");
+            Player4Text.text = PlayerPrefs.GetString("Player4");
             Player4CointValue.text = PlayerPrefs.GetInt("Player4" + "Coints").ToString();
             Player4Level.text = PlayerPrefs.GetInt("Player4"  + "lastlevelunloked").ToString();
             Player4UI.SetActive(true);
@@ -256,11 +241,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player4UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player5.txt"))
+        if (PlayerPrefs.HasKey("Player5"))
         {
-            string SavePlayer5 = File.ReadAllText(Datapath + ".gub/Data/players/Player5.txt");
-            Player5String = SavePlayer5;
-            Player5Text.text = SavePlayer5;
+            Player5String = PlayerPrefs.GetString("Player5");
+            Player5Text.text = PlayerPrefs.GetString("Player5");
             Player5CointValue.text = PlayerPrefs.GetInt("PlayerX" + "Coints").ToString();
             Player5Level.text = PlayerPrefs.GetInt("PlayerX"  + "lastlevelunloked").ToString();
             Player5UI.SetActive(true);
@@ -271,11 +255,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player5UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player6.txt"))
+        if (PlayerPrefs.HasKey("Player6"))
         {
-            string SavePlayer6 = File.ReadAllText(Datapath + ".gub/Data/players/Player6.txt");
-            Player6String = SavePlayer6;
-            Player6Text.text = SavePlayer6;
+            Player6String = PlayerPrefs.GetString("Player6");
+            Player6Text.text = PlayerPrefs.GetString("Player6");
             Player6CointValue.text = PlayerPrefs.GetInt("Player6" + "Coints").ToString();
             Player6Level.text = PlayerPrefs.GetInt("Player6"  + "lastlevelunloked").ToString();
             Player6UI.SetActive(true);
@@ -287,11 +270,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player6UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player7.txt"))
+        if (PlayerPrefs.HasKey("Player7"))
         {
-            string SavePlayer7 = File.ReadAllText(Datapath + ".gub/Data/players/Player7.txt");
-            Player7String = SavePlayer7;
-            Player7Text.text = SavePlayer7;
+            Player7String = PlayerPrefs.GetString("Player7");
+            Player7Text.text = PlayerPrefs.GetString("Player7");
             Player7CointValue.text = PlayerPrefs.GetInt("Player7" + "Coints").ToString();
             Player7Level.text = PlayerPrefs.GetInt("Player7"  + "lastlevelunloked").ToString();
             Player7UI.SetActive(true);
@@ -302,11 +284,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player7UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player8.txt"))
+        if (PlayerPrefs.HasKey("Player8"))
         {
-            string SavePlayer8 = File.ReadAllText(Datapath + ".gub/Data/players/Player8.txt");
-            Player8String = SavePlayer8;
-            Player8Text.text = SavePlayer8;
+            Player8String = PlayerPrefs.GetString("Player8");
+            Player8Text.text =PlayerPrefs.GetString("Player8");
             Player8CointValue.text = PlayerPrefs.GetInt("Player8" + "Coints").ToString();
             Player8Level.text = PlayerPrefs.GetInt("Player8"  + "lastlevelunloked").ToString();
             Player8UI.SetActive(true);
@@ -317,11 +298,10 @@ public class CharacterManager : MonoBehaviour
         {
             Player8UI.SetActive(false);
         }
-        if (File.Exists(Datapath + ".gub/Data/players/Player9.txt"))
+        if (PlayerPrefs.HasKey("Player9"))
         {
-            string SavePlayer9 = File.ReadAllText(Datapath + ".gub/Data/players/Player9.txt");
-            Player9String = SavePlayer9;
-            Player9Text.text = SavePlayer9;
+            Player9String = PlayerPrefs.GetString("Player9");
+            Player9Text.text = PlayerPrefs.GetString("Player9");
             Player9CointValue.text = PlayerPrefs.GetInt("Player9" + "Coints").ToString();
             Player9Level.text = PlayerPrefs.GetInt("Player9"  + "lastlevelunloked").ToString();
             Player9UI.SetActive(true);
@@ -427,7 +407,7 @@ public class CharacterManager : MonoBehaviour
 
     private void PlayerCreator()
     {
-        File.WriteAllText(Datapath + ".gub/Data/players/Player" + TempCharacterNumber + ".txt", TempCharacterName);
+        PlayerPrefs.SetString("Player" + TempCharacterNumber, TempCharacterName);
         PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Coints", 0);
         PlayerPrefs.SetInt("Player" + TempCharacterNumber + "SpeedPotion", 0);
        // PlayerPrefs.SetInt("Player" + TempCharacterNumber + "BigSpeedPotion", 0);
@@ -439,10 +419,16 @@ public class CharacterManager : MonoBehaviour
         PlayerPrefs.SetFloat("Player" + TempCharacterNumber + "StartPosX", -46);
         PlayerPrefs.SetFloat("Player" + TempCharacterNumber + "StartPosY", 3);
         PlayerPrefs.SetFloat("Player" + TempCharacterNumber + "StartPosZ", 0);
-        
         PlayerPrefs.SetInt("Player" + TempCharacterNumber + "CheckpointIndex", 1);
         
-        setDidacticiel(Didacticiel.isOn); 
+        if (Didacticiel.isOn)
+        {
+            PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Didacticiel", 1);
+        }
+        if (Didacticiel.isOn == false)
+        {
+            PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Didacticiel", 0);
+        }
         
         LoadCharacter();
         InputFieldGam.SetActive(false);
@@ -450,20 +436,7 @@ public class CharacterManager : MonoBehaviour
         TempCharacterName = "none";
 
     }
-
-    public void setDidacticiel(bool isactive)
-    {
-        
-        if (isactive)
-        {
-            PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Didacticiel", 1);
-        }
-        if (isactive == false)
-        {
-            PlayerPrefs.SetInt("Player" + TempCharacterNumber + "Didacticiel", 0);
-        }
-        
-    }
+    
 
 
     public void DeletePlayer0(bool notif)
@@ -527,7 +500,7 @@ public class CharacterManager : MonoBehaviour
 
     private void DeletePlayer(int characterId)
     {
-        File.Delete(Datapath + ".gub/Data/players/Player" + characterId + ".txt");
+        PlayerPrefs.DeleteKey("Player" + characterId);
         PlayerPrefs.DeleteKey("Player" + characterId + "Coints");
         PlayerPrefs.DeleteKey("Player" + characterId + "SpeedPotion");
         PlayerPrefs.DeleteKey("Player" + characterId + "BigSpeedPotion");

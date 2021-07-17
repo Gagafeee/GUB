@@ -4164,7 +4164,6 @@ MonoBehaviour:
   NewPlayerPanelButton: {fileID: 782646581}
   NewPlayerPanelErrorText: {fileID: 226688223}
   NewPlayerPanelErrorTextGameObject: {fileID: 226688221}
-  Datapath: 
   Didacticiel: {fileID: 238420012}
   Player0UI: {fileID: 1292906573}
   Player0Text: {fileID: 871992406}
@@ -33471,7 +33470,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -185, y: -4, z: 0}
@@ -33581,7 +33580,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15
+      m_AnimationSpeed: 15.000001
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -180, y: -4, z: 0}
@@ -33625,7 +33624,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -178, y: -4, z: 0}
@@ -33669,7 +33668,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -176, y: -4, z: 0}
@@ -33779,7 +33778,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -47, y: -4, z: 0}
@@ -33823,7 +33822,7 @@ Tilemap:
       - {fileID: -2599382905593267047, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: -6728670912742855677, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
       - {fileID: 4362167923263704163, guid: d1261375b7f7db54991287f1b805a42a, type: 3}
-      m_AnimationSpeed: 15.000001
+      m_AnimationSpeed: 15
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -45, y: -4, z: 0}
@@ -41527,6 +41526,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2088427586}
     m_Modifications:
+    - target: {fileID: 4263041101557144896, guid: cdee92e6607c4544cabe463fa5c629c2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 613.5111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263041101557144896, guid: cdee92e6607c4544cabe463fa5c629c2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72.93158
+      objectReference: {fileID: 0}
     - target: {fileID: 4263041103003905995, guid: cdee92e6607c4544cabe463fa5c629c2,
         type: 3}
       propertyPath: m_Name
@@ -41535,6 +41544,16 @@ PrefabInstance:
     - target: {fileID: 4263041103003905995, guid: cdee92e6607c4544cabe463fa5c629c2,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263041103003905996, guid: cdee92e6607c4544cabe463fa5c629c2,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263041103003905996, guid: cdee92e6607c4544cabe463fa5c629c2,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4263041103003905998, guid: cdee92e6607c4544cabe463fa5c629c2,
@@ -41641,6 +41660,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322117266733325095, guid: cdee92e6607c4544cabe463fa5c629c2,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Une erreur interne a fait planter le jeu
+
+        An internal error
+        occurred causing the game to crash '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdee92e6607c4544cabe463fa5c629c2, type: 3}
@@ -41752,6 +41779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TrelloBugUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240912314293065689, guid: 74bf572b5b5cb484491a5723c438d35f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74bf572b5b5cb484491a5723c438d35f, type: 3}
