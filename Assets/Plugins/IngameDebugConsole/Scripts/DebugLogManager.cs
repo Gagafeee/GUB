@@ -1262,7 +1262,7 @@ namespace IngameDebugConsole
             }
             else
             {
-                newLogItem = (DebugLogItem)Instantiate(logItemPrefab, logItemsContainer, false);
+                newLogItem = (DebugLogItem) Instantiate(logItemPrefab, logItemsContainer, false);
                 newLogItem.Initialize(recycledListView);
             }
 

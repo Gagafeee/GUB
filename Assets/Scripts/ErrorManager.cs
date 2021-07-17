@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.IO;
+using IngameDebugConsole;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,6 @@ public class ErrorManager : MonoBehaviour
     }
     void Start()
     {
-        
         Console = GameObject.FindGameObjectWithTag("Console");
         ConsoleAnimator = GameObject.FindGameObjectWithTag("Console").GetComponent<Animator>();
         

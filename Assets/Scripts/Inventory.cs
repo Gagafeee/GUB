@@ -6,23 +6,23 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory inventory;
     public Statistic statistic;
-    public int ___________________________________________;
+    [Space(15)]
     public GameObject Panel;
     public Animator animator;
     public bool InventoryIsOpen = false;
     public GameObject ScreenPanel;
     public Animator ScreenInventory;
 
-    public int ______________________________________________;
+    [Space(15)]
 
     public Text CointQTText;
     public Image CointImage;
 
-    public int _________________________________________;
+    [Space(15)]
     public Text ItemQTText;
     public Image ItemImage;
     public int ItemValue;
-    public int ________________________________________;
+    [Space(15)]
     public Text SpeedPotionQTText;
     public Image SpeedPotionImage;
     public int SpeedPotionValue;
@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour
     public GameObject SpeedPotionScreenImageGameObject;
     public GameObject SpeedPotionScreenRemplissageText;
     public GameObject SpeedPotionScreen;
-    public int _______________________________________;
+    [Space(15)]
     public Text HealPotionQTText;
     public Image HealPotionImage;
     public int HealPotionValue;
@@ -52,7 +52,7 @@ public class Inventory : MonoBehaviour
     public GameObject HealPotionScreenImageGameObject;
     public GameObject HealPotionScreenRemplissageText;
     public GameObject HealPotionScreen;
-    public int ______________________________________;
+    [Space(15)]
     public Text JumpPotionQTText;
     public Image JumpPotionImage;
     public int JumpPotionValue;

@@ -772,7 +772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5450353945313071353
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3056,6 +3056,7 @@ MonoBehaviour:
   canvas: {fileID: 5450792476932322673}
   inputTitle: {fileID: 5272333961129699827}
   inputDescription: {fileID: 5272393452537319977}
+  inputMail: {fileID: 6986261802344543744}
   reportOptionsDropDown: {fileID: 5272284858064374467}
   painter: {fileID: 5271485029429775309}
   screenshotSlots:
@@ -4245,7 +4246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your Email (not required)
+  m_Text: Your Email or Discord (not required)
 --- !u!1 &7249248791649856209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,5 +4325,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Note : You can enter in Developper mode (Press W ) and clic on the console
-    to have more informations'
+  m_Text: 'Note : In game, You can enter in Developper mode (Press W ) and clic on
+    the console to have more informations'

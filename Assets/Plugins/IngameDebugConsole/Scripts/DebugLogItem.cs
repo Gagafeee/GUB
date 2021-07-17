@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 #if UNITY_EDITOR
@@ -49,6 +50,7 @@ namespace IngameDebugConsole
 #endif
         #endregion
 
+        public static DebugLogItem instance;
 #pragma warning disable 0649
         // Cached components
         [SerializeField]
@@ -75,7 +77,7 @@ namespace IngameDebugConsole
 #pragma warning restore 0649
 
         // Debug entry to show with this log item
-        private DebugLogEntry logEntry;
+        public DebugLogEntry logEntry;
 
         // Index of the entry in the list of entries
         private int entryIndex;
@@ -86,6 +88,11 @@ namespace IngameDebugConsole
         private float copyLogButtonHeight;
 
         private DebugLogRecycledListView manager;
+
+        private void Awake()
+        {
+            instance = this;
+        }
 
         public void Initialize(DebugLogRecycledListView manager)
         {

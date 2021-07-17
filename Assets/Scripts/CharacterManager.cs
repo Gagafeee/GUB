@@ -24,85 +24,86 @@ public class CharacterManager : MonoBehaviour
     public Animator videoAnim;
     public GameObject Fade;
     public float waitTime;
-
+    [Space(15)]
     public GameObject InputFieldText;
     public GameObject InputFieldGam;
     public string TempCharacterName;
     public int TempCharacterNumber;
-    public bool NewPlayerPanelIsAtive;
+    public bool NewPlayerPanelIsActive;
     public Button NewPlayerPanelButton;
     public Text NewPlayerPanelErrorText;
     public GameObject NewPlayerPanelErrorTextGameObject;
-
+    [Space(15)]
     public string Datapath;
-
+    [Space(15)]
     public Toggle Didacticiel;
-
+    [Space(30)]
     public GameObject Player0UI;
     public Text Player0Text;
     public Text Player0CointValue;
     public Text Player0Level;
-
+    [Space(20)]
     public GameObject Player1UI;
     public Text Player1Text;
     public string Player1String = "PLAYERNAME";
     public Text Player1CointValue;
     public Text Player1Level;
-
+    [Space(20)]
     public GameObject Player2UI;
     public Text Player2Text;
     public string Player2String = "PLAYERNAME";
     public Text Player2CointValue;
     public Text Player2Level;
-
+    [Space(20)]
     public GameObject Player3UI;
     public Text Player3Text;
     public string Player3String = "PLAYERNAME";
     public Text Player3CointValue;
     public Text Player3Level;
-
+    [Space(20)]
     public GameObject Player4UI;
     public Text Player4Text;
     public string Player4String = "PLAYERNAME";
     public Text Player4CointValue;
     public Text Player4Level;
-
+    [Space(20)]
     public GameObject Player5UI;
     public Text Player5Text;
     public string Player5String = "PLAYERNAME";
     public Text Player5CointValue;
     public Text Player5Level;
-
+    [Space(20)]
     public GameObject Player6UI;
     public Text Player6Text;
     public string Player6String = "PLAYERNAME";
     public Text Player6CointValue;
     public Text Player6Level;
-
+    [Space(20)]
     public GameObject Player7UI;
     public Text Player7Text;
     public string Player7String = "PLAYERNAME";
     public Text Player7CointValue;
     public Text Player7Level;
-
+    [Space(20)]
     public GameObject Player8UI;
     public Text Player8Text;
     public string Player8String = "PLAYERNAME";
     public Text Player8CointValue;
     public Text Player8Level;
-
+    [Space(20)]
     public GameObject Player9UI;
     public Text Player9Text;
     public string Player9String = "PLAYERNAME";
     public Text Player9CointValue;
     public Text Player9Level;
-
+  
 
     private void Start()
     {
-        var user = Environment.UserName;
-        Datapath = "C:/Users" +"/" + user + "/";
+        Datapath = "C:/Users" +"/" + Environment.UserName + "/Documents/";
 
+       
+      
     }
 
     public void Update()
@@ -116,7 +117,7 @@ public class CharacterManager : MonoBehaviour
         }
         
         
-        if (NewPlayerPanelIsAtive == true)
+        if (NewPlayerPanelIsActive == true)
         {
             string Tempvalue = InputFieldText.GetComponent<Text>().text;
 
@@ -349,7 +350,7 @@ public class CharacterManager : MonoBehaviour
     public void NewPlayer1()
     {
         InputFieldGam.SetActive(true);
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
         TempCharacterNumber = 1;
 
     }
@@ -357,56 +358,56 @@ public class CharacterManager : MonoBehaviour
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 2;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer3()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 3;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer4()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 4;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer5()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 5;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer6()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 6;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer7()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 7;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer8()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 8;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void NewPlayer9()
     {
         InputFieldGam.SetActive(true);
         TempCharacterNumber = 9;
-        NewPlayerPanelIsAtive = true;
+        NewPlayerPanelIsActive = true;
 
     }
     public void closeNewPlayerPanel()
@@ -415,7 +416,7 @@ public class CharacterManager : MonoBehaviour
         PlayerPrefs.DeleteKey("Player" + TempCharacterNumber + "Didacticiel");
         TempCharacterNumber = 0;
         AudioManager.PlayClipAt(sound, transform.position);
-        NewPlayerPanelIsAtive = false;
+        NewPlayerPanelIsActive = false;
     }
     public void CharacterNameRecuperator()
     {

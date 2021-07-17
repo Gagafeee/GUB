@@ -90,7 +90,7 @@ public class PotionManager : MonoBehaviour
     {
         JumpPotionIsInUse = true;
         Statistic.Instance.jumpPotionUse++;
-        Inventory.inventory.JumpPotionValue = Inventory.inventory.JumpPotionValue - 1;
+        Inventory.inventory.JumpPotionValue -= 1;
         LoadAndSaveData.instance.SaveData();
         Inventory.inventory.JumpPotionTimeGameObject.SetActive(true);
         Inventory.inventory.JumpPotionUseButton.SetActive(true);
@@ -250,7 +250,7 @@ public class PotionManager : MonoBehaviour
     {
 
         i = SpeedPotionUseTime;
-        int p = i / 5;
+        var p = i / 5;
 
         while (i >= 0)
         {
@@ -375,7 +375,7 @@ public class PotionManager : MonoBehaviour
     public IEnumerator JumpPotionUsing()
     {
         i = JumpPotionUseTime;
-        int p = i / 5;
+        var p = i / 5;
 
         while (i >= 0)
         {
